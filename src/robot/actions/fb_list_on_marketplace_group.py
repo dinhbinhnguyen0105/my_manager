@@ -126,6 +126,7 @@ def get_create_dialog(page: Page) -> Union[bool, Locator]:
         sleep(1)
 
     if not sell_btn_locator:
+        print("Cannot get click 'Sell something' button.")
         return False
 
     sell_btn_locator.click()
@@ -144,11 +145,13 @@ def get_create_dialog(page: Page) -> Union[bool, Locator]:
         times += 1
 
     if not sell_dialog_locator:
+        print("Cannot get 'Create new listing' dialog.")
         return False
     btn_locators = sell_dialog_locator.locator(Selectors.button_without_label)
     try:
         btn_locators.first.wait_for(timeout=MIN)
     except PlaywrightTimeoutError:
+        print("Cannot get 'Item for sell' dialog.")
         return False
     btn_locators.nth(0).click()
 
@@ -357,6 +360,7 @@ def handle_create_dialog(
             times += 1
             sleep(1)
         if not next_btn_locator:
+            print("Cannot get 'Next' button.")
             return False
         next_btn_locator.scroll_into_view_if_needed()
         sleep(random.uniform(0.5, 2))
@@ -402,6 +406,7 @@ def handle_create_dialog(
             times += 1
             sleep(1)
         if not publish_btn_locator:
+            print("Cannot get 'Post' button.")
             return False
     except Exception as e:
         exc_type, exc_value, exc_traceback = sys.exc_info()
@@ -577,6 +582,7 @@ def handle_open_list_more_place(page: Page) -> Optional[Locator]:
                 times += 1
                 sleep(1)
         if not detail_dialog_locator:
+            print("Cannot get '<User>'s Post' dialog.")
             return False
     except Exception as e:
         exc_type, exc_value, exc_traceback = sys.exc_info()
@@ -604,12 +610,23 @@ def handle_open_list_more_place(page: Page) -> Optional[Locator]:
     # TODO wait ellipsis btn
     try:
         sleep(random.uniform(0.5, 2))
-        ellipsis_btn_locators = detail_dialog_locator.locator(Selectors.ellipsis_button)
-        ellipsis_btn_locators.wait_for(timeout=MIN)
-        for i in range(ellipsis_btn_locators.count()):
-            if ellipsis_btn_locators.nth(i).is_visible():
-                ellipsis_btn_locators.nth(i).click()
-                break
+        times = 0
+        is_clicked_ellipsis_btn = False
+        while not is_clicked_ellipsis_btn and times < 60:
+            is_clicked_ellipsis_btn = False
+            ellipsis_btn_locators = detail_dialog_locator.locator(
+                Selectors.ellipsis_button
+            )
+            ellipsis_btn_locators.wait_for(timeout=MIN)
+            for i in range(ellipsis_btn_locators.count()):
+                if ellipsis_btn_locators.nth(i).is_visible():
+                    ellipsis_btn_locators.nth(i).click()
+                    is_clicked_ellipsis_btn = True
+                    break
+            times += 1
+            sleep(1)
+        if not is_clicked_ellipsis_btn:
+            return False
     except Exception as e:
         exc_type, exc_value, exc_traceback = sys.exc_info()
         tb_list = traceback.extract_tb(exc_traceback)
@@ -632,6 +649,7 @@ def handle_open_list_more_place(page: Page) -> Optional[Locator]:
                 f"[\n\tError: {type(e).__name__}\n\tOccurred in file: {file_name}\n\tIn function: {function_name}\n\tAt line: {line_number}\n\t]"
             )
         return False
+
     # TODO click to list more place
     try:
         sleep(random.uniform(0.5, 2))
@@ -684,6 +702,7 @@ def handle_open_list_more_place(page: Page) -> Optional[Locator]:
                 times += 1
                 sleep(1)
         if not more_place_dialog_locator:
+            print("Cannot get 'List in more places' dialog.")
             return False
         return more_place_dialog_locator
     except Exception as e:
