@@ -6,6 +6,7 @@ greenlet==3.2.0
 idna==3.10
 iniconfig==2.1.0
 packaging==25.0
+pillow==11.3.0
 playwright==1.51.0
 pluggy==1.5.0
 pycurl==7.45.6
