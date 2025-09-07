@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ActionPayloadContainer</class>
+ <widget class="QWidget" name="ActionPayloadContainer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>489</width>
+    <height>292</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#ActionPayloadContainer{
+  font-family: &quot;Courier New&quot;;
+  background-color: #FFFFFF;
+  font-size: 13px;
+border: 1px solid #cccccc;
+border-radius: 8px;
+}
+QPushButton{
+  font-family: &quot;Courier New&quot;;
+  font-size: 13px;
+}
+QCheckBox {
+  font-family: &quot;Courier New&quot;;
+  font-size: 13px;
+}
+QGroupBox {
+  font-family: &quot;Courier New&quot;;
+  font-size: 13px;
+  background-color: rgba(248, 249, 250, 1);
+}
+QLineEdit {
+  padding: 4px 0;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color:#212529;
+}
+QPlainTextEdit {
+	background-color: #FFFFFF;
+  color:#212529;
+}
+QLabel {
+  font-family: &quot;Courier New&quot;;
+  font-size: 13px;
+  color: rgb(90, 93, 97);
+}
+QRadioButton {
+  font-family: &quot;Courier New&quot;;
+  font-size: 13px;
+  color: #212529;
+}
+QComboBox {
+  font-family: &quot;Courier New&quot;;
+  font-size: 13px;
+  color: #212529;
+}
+QPushButton {
+  color: #212529;
+}
+
+QCheckBox{
+  color: #212529;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>4</number>
+   </property>
+   <property name="leftMargin">
+    <number>4</number>
+   </property>
+   <property name="topMargin">
+    <number>4</number>
+   </property>
+   <property name="rightMargin">
+    <number>4</number>
+   </property>
+   <property name="bottomMargin">
+    <number>4</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QComboBox" name="names_combobox"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="options_combobox"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="pid_input">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">margin: 0 4px;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="delete_btn">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Delete</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QWidget" name="content_container" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>4</number>
+        </property>
+        <property name="leftMargin">
+         <number>8</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>8</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>4</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="open_images_btn">
+            <property name="text">
+             <string>Open images</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="list_images"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="title_line_edit"/>
+          </item>
+          <item>
+           <widget class="QPlainTextEdit" name="description_text_edit"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

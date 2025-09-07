@@ -1,0 +1,8 @@
+.venv
+.vscode
+src/repositories
+dist
+build
+__pycache__/
+*.pyc
+*.pyo
