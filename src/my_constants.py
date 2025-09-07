@@ -1,11 +1,16 @@
 # src/my_constants.py
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 CONNECTION_DB_USER = "user_connection"
 CONNECTION_DB_PRODUCT = "product_connection"
 CONNECTION_DB_SETTING = "setting_connection"
 
-PATH_DB_USER = "./src/repositories/db/db_user.db"
-PATH_DB_PRODUCT = "./src/repositories/db/db_product.db"
-PATH_DB_SETTING = "./src/repositories/db/db_setting.db"
+PATH_DB_USER = os.getenv("PATH_DB_USER")
+PATH_DB_PRODUCT = os.getenv("PATH_DB_PRODUCT")
+PATH_DB_SETTING = os.getenv("PATH_DB_SETTING")
 
 TABLE_USER = "user"
 TABLE_USER_LISTED_PRODUCT = "listed_products"

@@ -10,13 +10,13 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-06 23:17:29.771295",
-        "updated_at": "2025-08-22 17:39:06.332838"
+        "updated_at": "2025-08-30 10:18:06.345686"
     },
     {
         "id": 2,
@@ -29,13 +29,13 @@
         "email_password": "",
         "phone_number": "586295306",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/363.0.743255906 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-09 19:01:41.005963",
-        "updated_at": "2025-08-22 17:39:06.530230"
+        "updated_at": "2025-08-30 10:18:06.346609"
     },
     {
         "id": 3,
@@ -48,13 +48,13 @@
         "email_password": "",
         "phone_number": "585616090",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/133.0.6943.120 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-09 19:01:51.515101",
-        "updated_at": "2025-08-22 17:39:06.061841"
+        "updated_at": "2025-08-30 10:18:06.347244"
     },
     {
         "id": 4,
@@ -67,13 +67,13 @@
         "email_password": "",
         "phone_number": "589798814",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/135.0.7049.53 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-09 19:45:09.243096",
-        "updated_at": "2025-08-22 17:39:07.654440"
+        "updated_at": "2025-08-30 10:18:06.347859"
     },
     {
         "id": 5,
@@ -86,13 +86,13 @@
         "email_password": "",
         "phone_number": "379236178",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-09 19:45:18.938290",
-        "updated_at": "2025-08-22 17:39:06.881187"
+        "updated_at": "2025-08-30 10:18:06.348471"
     },
     {
         "id": 6,
@@ -105,13 +105,13 @@
         "email_password": "",
         "phone_number": "569148952",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-10 19:53:41.567067",
-        "updated_at": "2025-08-22 17:39:07.057973"
+        "updated_at": "2025-08-30 10:18:06.349103"
     },
     {
         "id": 7,
@@ -124,13 +124,13 @@
         "email_password": "",
         "phone_number": "568523457",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:134.0) Gecko/20100101 Firefox/134.0",
         "status": 1,
         "created_at": "2025-06-10 19:54:16.354854",
-        "updated_at": "2025-08-22 17:39:08.047189"
+        "updated_at": "2025-08-30 10:18:06.349760"
     },
     {
         "id": 8,
@@ -143,13 +143,13 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-10 21:23:13.332822",
-        "updated_at": "2025-08-22 17:39:08.446105"
+        "updated_at": "2025-08-30 10:18:06.350400"
     },
     {
         "id": 9,
@@ -162,13 +162,13 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-13 17:57:33.814527",
-        "updated_at": "2025-08-22 17:39:09.189388"
+        "updated_at": "2025-08-30 10:18:06.351032"
     },
     {
         "id": 10,
@@ -181,13 +181,13 @@
         "email_password": "",
         "phone_number": "565317075",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-13 17:57:45.998075",
-        "updated_at": "2025-08-22 17:39:09.957573"
+        "updated_at": "2025-08-30 10:18:06.351786"
     },
     {
         "id": 11,
@@ -200,13 +200,13 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-13 21:44:10.705984",
-        "updated_at": "2025-08-22 17:39:10.344871"
+        "updated_at": "2025-08-30 10:18:06.352436"
     },
     {
         "id": 12,
@@ -219,13 +219,13 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/363.0.743255906 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-15 19:07:42.939078",
-        "updated_at": "2025-08-22 17:39:09.541580"
+        "updated_at": "2025-08-30 10:18:06.353093"
     },
     {
         "id": 13,
@@ -238,13 +238,13 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-15 19:07:49.456393",
-        "updated_at": "2025-08-22 17:39:10.766269"
+        "updated_at": "2025-08-30 10:18:06.353753"
     },
     {
         "id": 14,
@@ -257,13 +257,13 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-15 19:23:52.391015",
-        "updated_at": "2025-08-22 17:39:12.050472"
+        "updated_at": "2025-08-30 10:18:06.354585"
     },
     {
         "id": 15,
@@ -276,13 +276,13 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-15 20:27:36.537781",
-        "updated_at": "2025-08-22 17:39:11.165615"
+        "updated_at": "2025-08-30 10:18:06.356302"
     },
     {
         "id": 16,
@@ -295,13 +295,13 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-15 20:27:44.691427",
-        "updated_at": "2025-08-22 17:39:11.697364"
+        "updated_at": "2025-08-30 10:18:06.357046"
     },
     {
         "id": 17,
@@ -314,16 +314,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-15 20:27:48.071254",
-        "updated_at": "2025-08-22 17:39:12.768978"
+        "updated_at": "2025-08-30 10:18:06.357729"
     },
     {
-        "id": 19,
+        "id": 18,
         "uid": "61577658442700",
         "my_id": "af9d6981-18e3-4254-933f-b586c65ab592",
         "username": "Huỳnh Thanh Duy",
@@ -333,16 +333,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-16 10:39:26.653741",
-        "updated_at": "2025-08-22 17:39:12.980711"
+        "updated_at": "2025-08-30 10:18:06.358423"
     },
     {
-        "id": 21,
+        "id": 19,
         "uid": "61577271365981",
         "my_id": "74ac1884-705e-4ae3-a02b-56e7ed60afd7",
         "username": "Cao Trọng Yến",
@@ -352,16 +352,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-16 11:24:44.280254",
-        "updated_at": "2025-08-22 17:39:13.421678"
+        "updated_at": "2025-08-30 10:18:06.359115"
     },
     {
-        "id": 22,
+        "id": 20,
         "uid": "61577691951723",
         "my_id": "313876bb-8cd9-4e66-96fb-1d84710885cf",
         "username": "Phạm Thị Mỹ",
@@ -371,16 +371,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
-        "user_group": -9,
+        "type": "re.r.",
+        "user_group": 0,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-16 11:24:55.242565",
-        "updated_at": "2025-08-22 17:39:13.220768"
+        "updated_at": "2025-08-30 10:18:06.359811"
     },
     {
-        "id": 23,
+        "id": 21,
         "uid": "61577285675466",
         "my_id": "486b90a2-7bea-4229-aa86-1be1a638a045",
         "username": "Bùi Minh Thuận",
@@ -390,16 +390,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-16 11:49:16.880423",
-        "updated_at": "2025-08-22 17:39:13.572684"
+        "updated_at": "2025-08-30 10:18:06.360517"
     },
     {
-        "id": 24,
+        "id": 22,
         "uid": "61577614524468",
         "my_id": "de8a315a-c8b2-47e8-a5d5-564ad9105b50",
         "username": "Dương Tuyết Dung",
@@ -409,16 +409,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
         "status": 1,
         "created_at": "2025-06-16 11:49:28.607849",
-        "updated_at": "2025-08-22 17:39:13.748028"
+        "updated_at": "2025-08-30 10:18:06.361217"
     },
     {
-        "id": 26,
+        "id": 23,
         "uid": "61577586026065",
         "my_id": "00bcb9fe-2bed-4ef9-ae27-2d1f3b68bdf9",
         "username": "Châu Phương Nga",
@@ -428,16 +428,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-16 11:49:46.221019",
-        "updated_at": "2025-08-22 17:39:14.024024"
+        "updated_at": "2025-08-30 10:18:06.361933"
     },
     {
-        "id": 27,
+        "id": 24,
         "uid": "61577352122074",
         "my_id": "9c656f7b-d224-42d6-a1f3-25a8b2aec6d9",
         "username": "Nguyễn Hoàng Oanh",
@@ -447,16 +447,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-16 11:49:52.969824",
-        "updated_at": "2025-08-22 17:39:14.262084"
+        "updated_at": "2025-08-30 10:18:06.362673"
     },
     {
-        "id": 28,
+        "id": 25,
         "uid": "61577259996696",
         "my_id": "5b434782-246d-41fb-9c0a-7b1cdf6577f4",
         "username": "Phạm Thu Sương",
@@ -466,16 +466,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-16 11:49:57.500407",
-        "updated_at": "2025-08-22 17:39:14.141176"
+        "updated_at": "2025-08-30 10:18:06.363404"
     },
     {
-        "id": 29,
+        "id": 26,
         "uid": "61577731670556",
         "my_id": "16db5148-8977-45ac-8cee-f2d1f0e05570",
         "username": "Ngô Huyền Trang",
@@ -485,16 +485,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-16 22:22:58.763918",
-        "updated_at": "2025-08-22 17:39:14.517312"
+        "updated_at": "2025-08-30 10:18:06.364299"
     },
     {
-        "id": 30,
+        "id": 27,
         "uid": "61577349752862",
         "my_id": "38a7ada1-41f5-4711-b3f3-9076023f0fed",
         "username": "Mai Ngọc Lan",
@@ -504,16 +504,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-16 22:23:08.114001",
-        "updated_at": "2025-08-22 17:39:14.392019"
+        "updated_at": "2025-08-30 10:18:06.365166"
     },
     {
-        "id": 31,
+        "id": 28,
         "uid": "61577699811914",
         "my_id": "e1526669-c675-45c6-a5cb-b9a16c7343f9",
         "username": "Cao Thị Mai Anh",
@@ -523,16 +523,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-16 22:23:27.369006",
-        "updated_at": "2025-08-22 17:39:14.646397"
+        "updated_at": "2025-08-30 10:18:06.366047"
     },
     {
-        "id": 32,
+        "id": 29,
         "uid": "61577579489495",
         "my_id": "74c507d7-ea30-43d9-a257-c90a683c62d7",
         "username": "Dương Thùy Trang",
@@ -542,16 +542,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-18 11:45:37.941018",
-        "updated_at": "2025-08-22 17:39:15.018816"
+        "updated_at": "2025-08-30 10:18:06.366823"
     },
     {
-        "id": 33,
+        "id": 30,
         "uid": "61577349365826",
         "my_id": "30ffa105-4b20-4062-b80f-671a34733ba5",
         "username": "Cao Phước Nguyên",
@@ -561,16 +561,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-18 11:46:06.055215",
-        "updated_at": "2025-08-22 17:39:14.902470"
+        "updated_at": "2025-08-30 10:18:06.367589"
     },
     {
-        "id": 34,
+        "id": 31,
         "uid": "61577617888679",
         "my_id": "240aa84f-2f20-49ae-a32f-4c69f8f476a2",
         "username": "Võ Hồng Nhung",
@@ -580,16 +580,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-18 11:46:09.271993",
-        "updated_at": "2025-08-22 17:39:14.771238"
+        "updated_at": "2025-08-30 10:18:06.368348"
     },
     {
-        "id": 35,
+        "id": 32,
         "uid": "61577320687431",
         "my_id": "07ec5a8e-13cb-4de6-b0ad-f2823e44492b",
         "username": "Trần Minh Đức",
@@ -599,16 +599,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-18 21:12:01.107218",
-        "updated_at": "2025-08-22 17:39:15.259141"
+        "updated_at": "2025-08-30 10:18:06.369122"
     },
     {
-        "id": 36,
+        "id": 33,
         "uid": "61577330077773",
         "my_id": "9d1a532c-381a-49f8-ac1f-909886245e23",
         "username": "Vũ Thụy Bình",
@@ -618,16 +618,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-19 13:13:02.180749",
-        "updated_at": "2025-08-22 17:39:15.141499"
+        "updated_at": "2025-08-30 10:18:06.370008"
     },
     {
-        "id": 37,
+        "id": 34,
         "uid": "61577446113424",
         "my_id": "1b61dc7e-de66-4b32-9262-6a2e7bebe58e",
         "username": "Mai Gia Đạt",
@@ -637,16 +637,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-19 13:13:30.002192",
-        "updated_at": "2025-08-22 17:39:15.370797"
+        "updated_at": "2025-08-30 10:18:06.370831"
     },
     {
-        "id": 38,
+        "id": 35,
         "uid": "61577626469398",
         "my_id": "28e4c00b-2e47-4814-af37-b3f7c469fc52",
         "username": "Nguyễn Duy Khoa",
@@ -656,16 +656,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/134.0.3124.95 Version/18.0 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-19 13:13:33.511039",
-        "updated_at": "2025-08-22 17:39:15.669595"
+        "updated_at": "2025-08-30 10:18:06.371638"
     },
     {
-        "id": 39,
+        "id": 36,
         "uid": "61577765454753",
         "my_id": "bf8f37ae-a7b7-4410-939f-5f333a75f793",
         "username": "Trương Việt Hùng",
@@ -675,16 +675,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.10 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-20 22:24:35.731330",
-        "updated_at": "2025-08-22 17:39:15.558019"
+        "updated_at": "2025-08-30 10:18:06.372465"
     },
     {
-        "id": 40,
+        "id": 37,
         "uid": "61577356508229",
         "my_id": "04ab751c-9f64-446b-a6d2-e2bc794f2925",
         "username": "Cao Trọng Nghĩa",
@@ -694,16 +694,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-20 22:24:39.271582",
-        "updated_at": "2025-08-22 17:39:15.442830"
+        "updated_at": "2025-08-30 10:18:06.373281"
     },
     {
-        "id": 41,
+        "id": 38,
         "uid": "61577531524192",
         "my_id": "149af765-4bef-4e06-9cb2-a74a25fde4ca",
         "username": "Phan Kim Bảo",
@@ -713,16 +713,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-20 22:36:33.048660",
-        "updated_at": "2025-08-22 17:39:16.019105"
+        "updated_at": "2025-08-30 10:18:06.374175"
     },
     {
-        "id": 42,
+        "id": 39,
         "uid": "61577733506397",
         "my_id": "f35766de-3611-43e6-b103-1829f29750be",
         "username": "Phan Quang Huy",
@@ -732,16 +732,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-20 22:53:43.795257",
-        "updated_at": "2025-08-22 17:39:15.779973"
+        "updated_at": "2025-08-30 10:18:06.374997"
     },
     {
-        "id": 43,
+        "id": 40,
         "uid": "61577301941096",
         "my_id": "297f3b0b-6d83-4b94-9c01-6ba225654d0e",
         "username": "Lý Thịnh An",
@@ -751,16 +751,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-20 22:56:19.650072",
-        "updated_at": "2025-08-22 17:39:15.897497"
+        "updated_at": "2025-08-30 10:18:06.375884"
     },
     {
-        "id": 44,
+        "id": 41,
         "uid": "61577695829475",
         "my_id": "c509fd6c-1208-4ed6-b450-a1c150a8eddd",
         "username": "Huỳnh Quốc Anh",
@@ -770,16 +770,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-21 20:53:42.028766",
-        "updated_at": "2025-08-22 18:06:19.480483"
+        "updated_at": "2025-08-30 10:18:06.377026"
     },
     {
-        "id": 45,
+        "id": 42,
         "uid": "61577728617893",
         "my_id": "e4b55345-6c13-4cfc-8946-427772702e3f",
         "username": "Vũ Trung Kiên",
@@ -789,16 +789,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-21 20:53:47.901620",
-        "updated_at": "2025-08-22 18:06:14.735550"
+        "updated_at": "2025-08-30 10:18:06.377901"
     },
     {
-        "id": 46,
+        "id": 43,
         "uid": "61577679330415",
         "my_id": "e2f770dd-6971-487c-8e02-ab6d65271ee8",
         "username": "Đặng Hồng Quân",
@@ -808,16 +808,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-21 20:53:50.719426",
-        "updated_at": "2025-08-22 18:06:09.611928"
+        "updated_at": "2025-08-30 10:18:06.378738"
     },
     {
-        "id": 47,
+        "id": 44,
         "uid": "61577583634425",
         "my_id": "563476ce-bf74-4863-a84a-2abb99817455",
         "username": "Ngô Thanh Long",
@@ -827,16 +827,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-21 20:54:03.363140",
-        "updated_at": "2025-08-22 18:06:04.405229"
+        "updated_at": "2025-08-30 10:18:06.379574"
     },
     {
-        "id": 48,
+        "id": 45,
         "uid": "61577293512971",
         "my_id": "b56b4d60-a4e3-45d9-af22-25a777254ec0",
         "username": "Dương Hải Đăng",
@@ -846,16 +846,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-21 20:54:13.672741",
-        "updated_at": "2025-08-22 18:05:59.887939"
+        "updated_at": "2025-08-30 10:18:06.380404"
     },
     {
-        "id": 49,
+        "id": 46,
         "uid": "61577598783684",
         "my_id": "3fa782f5-9777-4155-aa98-de22e0d890f4",
         "username": "Võ Hồng Sơn",
@@ -865,16 +865,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-21 21:23:23.101517",
-        "updated_at": "2025-08-22 18:05:54.484704"
+        "updated_at": "2025-08-30 10:18:06.381259"
     },
     {
-        "id": 50,
+        "id": 47,
         "uid": "61577248095117",
         "my_id": "17255e75-b948-4570-bd64-3357ce847edf",
         "username": "Lâm Duy Bảo",
@@ -884,16 +884,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "every.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-21 21:23:26.735194",
-        "updated_at": "2025-08-22 18:05:49.535478"
+        "updated_at": "2025-08-30 10:18:06.382112"
     },
     {
-        "id": 51,
+        "id": 48,
         "uid": "61577717317167",
         "my_id": "25abbbb5-3557-4fda-8883-0861a9d26070",
         "username": "Lê An Bình",
@@ -902,17 +902,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.",
-        "type": "re.s.",
+        "note": "every.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-27 22:13:22.962039",
-        "updated_at": "2025-08-22 12:59:59.507143"
+        "updated_at": "2025-08-30 10:18:06.382973"
     },
     {
-        "id": 52,
+        "id": 49,
         "uid": "61578000264453",
         "my_id": "154fc776-e788-4d04-84e3-43b93329a5d6",
         "username": "Mai Ngọc Anh",
@@ -921,17 +921,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.",
-        "type": "re.r.",
-        "user_group": 1,
+        "note": "every.",
+        "type": "re.s.",
+        "user_group": 0,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-28 22:11:41.063763",
-        "updated_at": "2025-08-22 12:59:59.320862"
+        "updated_at": "2025-09-02 19:59:49.102270"
     },
     {
-        "id": 53,
+        "id": 50,
         "uid": "61577894699954",
         "my_id": "5074c942-452b-4613-af7d-86de361e3b4e",
         "username": "Dương Thùy Linh",
@@ -940,17 +940,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.",
-        "type": "re.s.",
+        "note": "every.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.10 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-28 22:11:44.115706",
-        "updated_at": "2025-08-22 12:59:58.776454"
+        "updated_at": "2025-08-30 10:18:06.384704"
     },
     {
-        "id": 54,
+        "id": 51,
         "uid": "61577570953866",
         "my_id": "a197767a-aac4-42bf-aeb7-4285332ff1b0",
         "username": "Đinh Phương Thảo",
@@ -959,17 +959,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.",
-        "type": "re.s.",
+        "note": "every.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-28 22:11:46.902768",
-        "updated_at": "2025-08-22 13:00:00.934604"
+        "updated_at": "2025-08-30 10:18:06.385574"
     },
     {
-        "id": 55,
+        "id": 52,
         "uid": "61577743806864",
         "my_id": "0ae8637f-927e-4111-bf55-22922510d7c5",
         "username": "Nguyễn Minh Anh",
@@ -978,17 +978,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.",
-        "type": "re.r.",
+        "note": "every.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-06-28 22:12:12.123707",
-        "updated_at": "2025-08-22 12:59:59.924013"
+        "updated_at": "2025-08-30 10:18:06.386456"
     },
     {
-        "id": 56,
+        "id": 53,
         "uid": "61578040192560",
         "my_id": "524dfae7-f092-4804-a22c-c4a8986f5cd4",
         "username": "Bùi Lan Hương",
@@ -997,17 +997,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.",
-        "type": "re.s.",
+        "note": "every.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-28 23:13:10.268464",
-        "updated_at": "2025-08-22 13:00:00.655604"
+        "updated_at": "2025-08-30 10:18:06.387350"
     },
     {
-        "id": 57,
+        "id": 54,
         "uid": "61577999154690",
         "my_id": "539ac9ff-e80e-46ce-b8e5-8126f894c220",
         "username": "Đỗ Cẩm Vân",
@@ -1016,17 +1016,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.",
-        "type": "re.s.",
+        "note": "every.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-28 23:13:13.127088",
-        "updated_at": "2025-08-22 13:00:00.329790"
+        "updated_at": "2025-08-30 10:18:06.389147"
     },
     {
-        "id": 58,
+        "id": 55,
         "uid": "61577766547443",
         "my_id": "136976d9-3640-4d49-b5b3-535046677f3b",
         "username": "Dương Tuyết Linh",
@@ -1035,17 +1035,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "even.",
-        "type": "re.r.",
+        "note": "every.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-06-29 21:28:12.989151",
-        "updated_at": "2025-08-22 13:00:01.243137"
+        "updated_at": "2025-08-30 10:18:06.390121"
     },
     {
-        "id": 59,
+        "id": 56,
         "uid": "61578169551754",
         "my_id": "d114c0e0-4a8b-4aea-a279-279af2d4a49d",
         "username": "Mai Thúy Loan",
@@ -1054,17 +1054,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.tempt.",
-        "type": "re.s.",
+        "note": "every.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-07-01 13:33:04.041387",
-        "updated_at": "2025-08-22 13:00:02.027363"
+        "updated_at": "2025-09-05 22:46:36.494199"
     },
     {
-        "id": 60,
+        "id": 57,
         "uid": "61577832851446",
         "my_id": "ec2836f6-29d8-4f87-8e43-50487405fe9f",
         "username": "Châu Cát Tường",
@@ -1073,17 +1073,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.",
-        "type": "re.s.",
+        "note": "every.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-07-04 18:39:39.822149",
-        "updated_at": "2025-08-22 13:00:02.196229"
+        "updated_at": "2025-09-05 22:46:30.281831"
     },
     {
-        "id": 61,
+        "id": 58,
         "uid": "61578156025373",
         "my_id": "ce870664-d0a9-4d5f-853c-b70ab2fbba29",
         "username": "Nguyễn Thiên Kim",
@@ -1092,17 +1092,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.tempt.",
-        "type": "re.r.",
+        "note": "every.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-07-04 18:39:46.765908",
-        "updated_at": "2025-08-22 13:00:01.736795"
+        "updated_at": "2025-09-05 22:46:12.179277"
     },
     {
-        "id": 62,
+        "id": 59,
         "uid": "61578133646199",
         "my_id": "1992eaae-7d0c-4690-b84f-4d3abda357e9",
         "username": "Trần Ngọc Yến",
@@ -1111,17 +1111,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.",
-        "type": "re.s.",
+        "note": "every.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/135.0.7049.53 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-07-04 18:40:00.192856",
-        "updated_at": "2025-08-22 13:00:02.800798"
+        "updated_at": "2025-09-05 22:46:17.429610"
     },
     {
-        "id": 63,
+        "id": 60,
         "uid": "61578047460761",
         "my_id": "522b33e4-3d55-4a10-93e5-9f09b7c70cb4",
         "username": "Phạm Hồng Ngọc",
@@ -1130,17 +1130,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.tempt.",
-        "type": "re.s.",
+        "note": "every.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-07-04 18:40:07.016175",
-        "updated_at": "2025-08-22 13:00:02.684692"
+        "updated_at": "2025-09-05 22:46:03.204194"
     },
     {
-        "id": 64,
+        "id": 61,
         "uid": "61577868429698",
         "my_id": "559876e9-f0d5-4889-a9eb-b4344b3c4ccf",
         "username": "Huỳnh Anh Đào",
@@ -1149,17 +1149,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.",
-        "type": "re.r.",
+        "note": "every.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-07-04 18:40:09.631604",
-        "updated_at": "2025-08-22 13:00:02.413669"
+        "updated_at": "2025-09-05 22:45:53.414173"
     },
     {
-        "id": 65,
+        "id": 62,
         "uid": "61578058020151",
         "my_id": "25a00e68-eba7-4f65-9805-ef68c87e11c2",
         "username": "Phan Chi Mai",
@@ -1168,17 +1168,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.tempt.",
-        "type": "re.s.",
+        "note": "every.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-07-04 18:40:12.613331",
-        "updated_at": "2025-08-22 13:00:02.565209"
+        "updated_at": "2025-09-05 22:46:08.000936"
     },
     {
-        "id": 66,
+        "id": 63,
         "uid": "61578081628820",
         "my_id": "6253ef6d-3adc-4786-b7b6-65f983b639e5",
         "username": "Đặng Bảo Châu",
@@ -1187,17 +1187,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.",
-        "type": "re.s.",
+        "note": "every.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/135.0.7049.83 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-07-04 18:40:15.628137",
-        "updated_at": "2025-08-22 13:00:03.075447"
+        "updated_at": "2025-09-05 22:45:58.500149"
     },
     {
-        "id": 67,
+        "id": 64,
         "uid": "61578137606310",
         "my_id": "d6e259de-47b6-474c-b42c-35e30ac1c4ce",
         "username": "Ngô Thanh Huyền",
@@ -1206,17 +1206,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.tempt.",
-        "type": "re.r.",
+        "note": "every.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-07-04 19:07:00.600057",
-        "updated_at": "2025-08-22 13:00:02.914199"
+        "updated_at": "2025-09-05 22:46:25.326694"
     },
     {
-        "id": 68,
+        "id": 65,
         "uid": "61577772434150",
         "my_id": "243c1f46-1671-4b9a-bab6-dcaf6743859e",
         "username": "Lý An Bình",
@@ -1225,17 +1225,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "odd.",
-        "type": "re.s.",
+        "note": "every.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-07-04 19:07:03.223762",
-        "updated_at": "2025-08-22 13:00:03.224630"
+        "updated_at": "2025-09-05 22:45:48.863253"
     },
     {
-        "id": 69,
+        "id": 66,
         "uid": "61578258381270",
         "my_id": "68f84044-0c6b-45bf-a6df-31d7933600ec",
         "username": "Đinh Gia Hân",
@@ -1244,17 +1244,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "even.tempt.",
-        "type": "re.s.",
+        "note": "even.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-07-05 15:34:50.352350",
-        "updated_at": "2025-08-22 13:00:03.404373"
+        "updated_at": "2025-08-30 10:18:06.400333"
     },
     {
-        "id": 70,
+        "id": 67,
         "uid": "61578202944119",
         "my_id": "55229cab-a74d-4940-b9cc-c14624985dec",
         "username": "Cao Cát Khánh",
@@ -1264,16 +1264,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "even.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-07-05 15:34:55.749065",
-        "updated_at": "2025-08-22 13:00:03.894244"
+        "updated_at": "2025-08-30 10:18:06.401324"
     },
     {
-        "id": 71,
+        "id": 68,
         "uid": "61577853071699",
         "my_id": "05c74e76-c09e-433a-b161-a6573db273e8",
         "username": "Châu Khánh Diệp",
@@ -1282,17 +1282,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "even.tempt.",
-        "type": "re.s.",
+        "note": "even.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-07-05 15:35:03.375164",
-        "updated_at": "2025-08-22 13:00:03.724385"
+        "updated_at": "2025-08-30 10:18:06.402290"
     },
     {
-        "id": 72,
+        "id": 69,
         "uid": "61578215663657",
         "my_id": "a03d95d9-c47a-45ef-97ac-137209d8e822",
         "username": "Hồ Uyên Chi",
@@ -1302,16 +1302,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "even.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-07-05 15:35:05.966993",
-        "updated_at": "2025-08-22 13:00:03.554014"
+        "updated_at": "2025-08-30 10:18:06.403495"
     },
     {
-        "id": 73,
+        "id": 70,
         "uid": "61577867711058",
         "my_id": "ebc8a978-6d52-4d30-994b-89e8a59f55a0",
         "username": "Nguyễn Diễm Quỳnh",
@@ -1320,17 +1320,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "even.tempt.",
-        "type": "re.r.",
+        "note": "even.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-07-05 15:35:08.540059",
-        "updated_at": "2025-08-22 13:00:04.056448"
+        "updated_at": "2025-08-30 10:18:06.404535"
     },
     {
-        "id": 74,
+        "id": 71,
         "uid": "61577829822976",
         "my_id": "69f1be43-6342-43ff-ac12-9541a234ec84",
         "username": "Trần Thảo Linh",
@@ -1340,16 +1340,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "even.",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-07-05 15:35:11.045926",
-        "updated_at": "2025-08-22 13:00:04.785119"
+        "updated_at": "2025-08-30 10:18:06.405539"
     },
     {
-        "id": 75,
+        "id": 72,
         "uid": "61578271010739",
         "my_id": "20d9a0d6-7084-45ea-8f01-7bef77aeda52",
         "username": "Lê Gia Linh",
@@ -1358,17 +1358,17 @@
         "email": "",
         "email_password": "",
         "phone_number": "",
-        "note": "even.tempt.",
-        "type": "re.s.",
+        "note": "even.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/363.0.743255906 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15",
         "status": 1,
         "created_at": "2025-07-05 15:35:13.738587",
-        "updated_at": "2025-08-22 13:00:04.252331"
+        "updated_at": "2025-08-30 10:18:06.406553"
     },
     {
-        "id": 76,
+        "id": 73,
         "uid": "61577810173615",
         "my_id": "1c4fba4d-ce29-41e0-b6ee-c94922a19472",
         "username": "Phan Cẩm Ly",
@@ -1378,16 +1378,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "even.",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-07-05 15:35:23.805294",
-        "updated_at": "2025-08-22 13:00:04.469416"
+        "updated_at": "2025-08-30 10:18:06.407575"
     },
     {
-        "id": 77,
+        "id": 74,
         "uid": "61578312029877",
         "my_id": "83e5430e-7d05-4f92-8ebc-1abecc1dba6b",
         "username": "Quỳnh Chi Đoàn",
@@ -1397,16 +1397,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "even. ",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
         "status": 1,
         "created_at": "2025-07-13 20:41:09.530281",
-        "updated_at": "2025-08-22 13:00:05.055532"
+        "updated_at": "2025-08-30 10:18:06.408582"
     },
     {
-        "id": 78,
+        "id": 75,
         "uid": "61578016604612",
         "my_id": "32d3162a-e071-4201-8f3c-d7c84e322cd4",
         "username": "Tra Mi Nguyen",
@@ -1416,16 +1416,16 @@
         "email_password": "",
         "phone_number": "",
         "note": "even. ",
-        "type": "re.s.",
+        "type": "re.r.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0",
         "status": 1,
         "created_at": "2025-07-13 20:48:29.885863",
-        "updated_at": "2025-08-22 13:00:05.365291"
+        "updated_at": "2025-08-30 10:18:06.409599"
     },
     {
-        "id": 79,
+        "id": 76,
         "uid": "61578087851483",
         "my_id": "9f7c1720-e992-42c2-820e-333fa281ea6c",
         "username": "Xuân Thảo Lê",
@@ -1435,12 +1435,12 @@
         "email_password": "",
         "phone_number": "",
         "note": "even. ",
-        "type": "re.r.",
+        "type": "re.s.",
         "user_group": 1,
         "mobile_ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
         "desktop_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0",
         "status": 1,
         "created_at": "2025-07-13 21:50:41.424389",
-        "updated_at": "2025-08-22 13:00:05.207701"
+        "updated_at": "2025-08-30 10:18:06.410689"
     }
 ]
