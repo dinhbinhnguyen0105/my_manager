@@ -166,7 +166,7 @@ def handle_create_dialog(
         btn_expanded_locator = dialog.locator(Selectors.button_expanded)
         btn_expanded_locator.wait_for()
         btn_expanded_locator.first.click()
-        sleep(random.uniform(0.5, 2))
+        # sleep(random.uniform(0.5, 2))
     except Exception as e:
         exc_type, exc_value, exc_traceback = sys.exc_info()
         tb_list = traceback.extract_tb(exc_traceback)
@@ -196,16 +196,16 @@ def handle_create_dialog(
             input_locator = input_text_locators.nth(i)
             if input_locator.is_visible() and input_locator.is_enabled():
                 input_locator.scroll_into_view_if_needed()
-                sleep(random.uniform(0.5, 2))
+                # sleep(random.uniform(0.5, 2))
                 if i == 0:
                     input_locator.type(action_payload.title)
                 elif i == 1:
                     input_locator.type("0")
                 elif i == 2:
                     input_locator.clear()
-                    sleep(random.uniform(0.5, 2))
+                    # sleep(random.uniform(0.5, 2))
                     input_locator.type("Da lat")
-                    sleep(random.uniform(0.5, 2))
+                    # sleep(random.uniform(0.5, 2))
                     location_box_locator = page.wait_for_selector(
                         Selectors.location_box
                     )
@@ -215,7 +215,7 @@ def handle_create_dialog(
                             Selectors.location_box_item
                         )
                     )
-                    sleep(random.uniform(0.5, 2))
+                    # sleep(random.uniform(0.5, 2))
                     location_box_item_locators[0].click()
     except Exception as e:
         exc_type, exc_value, exc_traceback = sys.exc_info()
@@ -243,13 +243,13 @@ def handle_create_dialog(
     try:
         btn_locator = dialog.locator(Selectors.button_condition)
         btn_locator.scroll_into_view_if_needed()
-        sleep(random.uniform(0.5, 2))
+        # sleep(random.uniform(0.5, 2))
         btn_locator.first.click()
         condition_box = page.wait_for_selector(Selectors.condition_box)
         condition_box.wait_for_selector(Selectors.condition_box_item)
         condition_item = condition_box.query_selector_all(Selectors.condition_box_item)
         condition_item[0].scroll_into_view_if_needed()
-        sleep(random.uniform(0.5, 2))
+        # sleep(random.uniform(0.5, 2))
         condition_item[0].click()
     except Exception as e:
         exc_type, exc_value, exc_traceback = sys.exc_info()
@@ -277,7 +277,7 @@ def handle_create_dialog(
     try:
         description_locator = dialog.locator(Selectors.input_description)
         description_locator.first.scroll_into_view_if_needed()
-        sleep(random.uniform(0.5, 2))
+        # sleep(random.uniform(0.5, 2))
         description_locator.first.type(action_payload.description)
     except Exception as e:
         exc_type, exc_value, exc_traceback = sys.exc_info()
@@ -308,7 +308,7 @@ def handle_create_dialog(
             'xpath=//input[@accept="image/*,image/heif,image/heic"]/parent::*/parent::*'
         )
         btn_locator = parent_div_locator.first.locator(Selectors.button_without_label)
-        sleep(random.uniform(0.5, 2))
+        # sleep(random.uniform(0.5, 2))
         with page.expect_file_chooser() as fc_info:
             btn_locator.first.click()
         file_chooser = fc_info.value
@@ -363,7 +363,7 @@ def handle_create_dialog(
             print("Cannot get 'Next' button.")
             return False
         next_btn_locator.scroll_into_view_if_needed()
-        sleep(random.uniform(0.5, 2))
+        # sleep(random.uniform(0.5, 2))
         next_btn_locator.click()
     except Exception as e:
         exc_type, exc_value, exc_traceback = sys.exc_info()
@@ -440,7 +440,7 @@ def handle_create_dialog(
             btn_locator = marketplace_btn_locators.nth(i)
             if btn_locator.is_visible():
                 btn_locator.scroll_into_view_if_needed()
-                sleep(random.uniform(0.5, 2))
+                # sleep(random.uniform(0.5, 2))
                 btn_locator.click()
                 break
     except Exception as e:
@@ -468,10 +468,10 @@ def handle_create_dialog(
 
     # TODO Click publish btn
     try:
-        sleep(random.uniform(0.5, 2))
+        # sleep(random.uniform(0.5, 2))
         publish_btn_locator.scroll_into_view_if_needed()
         # publish_btn_locator.highlight()
-        sleep(random.uniform(0.5, 2))
+        # sleep(random.uniform(0.5, 2))
         publish_btn_locator.click()
     except Exception as e:
         exc_type, exc_value, exc_traceback = sys.exc_info()
@@ -502,10 +502,10 @@ def handle_create_dialog(
 def handle_detail_dialog(page: Page) -> bool:
     try:
         dialog_locator = handle_open_list_more_place(page)
-        sleep(random.uniform(0.5, 2))
+        # sleep(random.uniform(0.5, 2))
         group_locators = dialog_locator.locator(Selectors.group_checkbox)
         group_num = group_locators.count()
-        sleep(random.uniform(0.5, 2))
+        # sleep(random.uniform(0.5, 2))
         close_btn_locator = dialog_locator.get_by_role(
             role="button", name="Close", exact=False
         )
@@ -518,7 +518,7 @@ def handle_detail_dialog(page: Page) -> bool:
                     if group_num >= 0:
                         current_group_locator = new_group_locators.nth(group_num - 1)
                         current_group_locator.click()
-                        sleep(random.uniform(0.1, 0.5))
+                        # sleep(random.uniform(0.1, 0.5))
                         group_num -= 1
                 except Exception:
                     continue
@@ -569,7 +569,7 @@ def handle_open_list_more_place(page: Page) -> Optional[Locator]:
     # TODO Get detail dialog
     detail_dialog_locator: Optional[Locator] = None
     try:
-        sleep(random.uniform(0.5, 2))
+        # sleep(random.uniform(0.5, 2))
         times = 0
         while not detail_dialog_locator and times < 60:
             dialog_locators = page.locator(Selectors.detail_dialog)
@@ -609,7 +609,7 @@ def handle_open_list_more_place(page: Page) -> Optional[Locator]:
 
     # TODO wait ellipsis btn
     try:
-        sleep(random.uniform(0.5, 2))
+        # sleep(random.uniform(0.5, 2))
         times = 0
         is_clicked_ellipsis_btn = False
         while not is_clicked_ellipsis_btn and times < 60:
@@ -652,7 +652,7 @@ def handle_open_list_more_place(page: Page) -> Optional[Locator]:
 
     # TODO click to list more place
     try:
-        sleep(random.uniform(0.5, 2))
+        # sleep(random.uniform(0.5, 2))
         menu_locator = page.get_by_role(role="menu", name="Feed story", exact=False)
         list_more_place_btn_locator = menu_locator.get_by_role(
             role="menuitem", name="List in More Places", exact=False
@@ -684,7 +684,7 @@ def handle_open_list_more_place(page: Page) -> Optional[Locator]:
     # TODO get list more place dialog
     more_place_dialog_locator: Optional[Locator] = None
     try:
-        sleep(random.uniform(0.5, 2))
+        # sleep(random.uniform(0.5, 2))
         times = 0
         while not more_place_dialog_locator and times < 60:
             dialog_locators = page.locator(Selectors.dialog)
