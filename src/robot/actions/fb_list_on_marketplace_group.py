@@ -512,7 +512,6 @@ def handle_detail_dialog(page: Page) -> bool:
         close_btn_locator.click()
         while group_num > 0:
             new_dialog_locator = handle_open_list_more_place(page)
-            print(new_dialog_locator.get_attribute("aria-label"))
             new_group_locators = new_dialog_locator.locator(Selectors.group_checkbox)
             for i in range(20 if group_num > 20 else group_num):
                 try:
