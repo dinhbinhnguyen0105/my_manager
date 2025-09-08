@@ -73,6 +73,16 @@ QPushButton {
    <property name="bottomMargin">
     <number>8</number>
    </property>
+   <item row="1" column="0">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
+     </property>
+    </widget>
+   </item>
    <item row="0" column="0">
     <layout class="QGridLayout" name="dialog_robot_run_layout">
      <property name="leftMargin">
@@ -366,18 +376,16 @@ QPushButton {
      </item>
     </layout>
    </item>
-   <item row="1" column="0">
-    <widget class="QDialogButtonBox" name="buttonBox">
-     <property name="orientation">
-      <enum>Qt::Orientation::Horizontal</enum>
-     </property>
-     <property name="standardButtons">
-      <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
-     </property>
-    </widget>
-   </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>thread_num_input</tabstop>
+  <tabstop>group_num_input</tabstop>
+  <tabstop>delay_time_input</tabstop>
+  <tabstop>is_headless_checkbox</tabstop>
+  <tabstop>is_mobile_checkbox</tabstop>
+  <tabstop>select_group_file_btn</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>

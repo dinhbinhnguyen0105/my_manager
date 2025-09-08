@@ -61,6 +61,11 @@ class Ui_Dialog_RobotRun(object):
         self.gridLayout = QtWidgets.QGridLayout(Dialog_RobotRun)
         self.gridLayout.setContentsMargins(8, 8, 8, 8)
         self.gridLayout.setObjectName("gridLayout")
+        self.buttonBox = QtWidgets.QDialogButtonBox(parent=Dialog_RobotRun)
+        self.buttonBox.setOrientation(QtCore.Qt.Orientation.Horizontal)
+        self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.StandardButton.Cancel|QtWidgets.QDialogButtonBox.StandardButton.Ok)
+        self.buttonBox.setObjectName("buttonBox")
+        self.gridLayout.addWidget(self.buttonBox, 1, 0, 1, 1)
         self.dialog_robot_run_layout = QtWidgets.QGridLayout()
         self.dialog_robot_run_layout.setContentsMargins(0, -1, 0, 0)
         self.dialog_robot_run_layout.setSpacing(4)
@@ -175,16 +180,16 @@ class Ui_Dialog_RobotRun(object):
         self.verticalLayout_30.addLayout(self.select_group_file_layout)
         self.dialog_robot_run_layout.addWidget(self.select_group_file_container, 0, 2, 1, 1)
         self.gridLayout.addLayout(self.dialog_robot_run_layout, 0, 0, 1, 1)
-        self.buttonBox = QtWidgets.QDialogButtonBox(parent=Dialog_RobotRun)
-        self.buttonBox.setOrientation(QtCore.Qt.Orientation.Horizontal)
-        self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.StandardButton.Cancel|QtWidgets.QDialogButtonBox.StandardButton.Ok)
-        self.buttonBox.setObjectName("buttonBox")
-        self.gridLayout.addWidget(self.buttonBox, 1, 0, 1, 1)
 
         self.retranslateUi(Dialog_RobotRun)
         self.buttonBox.accepted.connect(Dialog_RobotRun.accept) # type: ignore
         self.buttonBox.rejected.connect(Dialog_RobotRun.reject) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(Dialog_RobotRun)
+        Dialog_RobotRun.setTabOrder(self.thread_num_input, self.group_num_input)
+        Dialog_RobotRun.setTabOrder(self.group_num_input, self.delay_time_input)
+        Dialog_RobotRun.setTabOrder(self.delay_time_input, self.is_headless_checkbox)
+        Dialog_RobotRun.setTabOrder(self.is_headless_checkbox, self.is_mobile_checkbox)
+        Dialog_RobotRun.setTabOrder(self.is_mobile_checkbox, self.select_group_file_btn)
 
     def retranslateUi(self, Dialog_RobotRun):
         _translate = QtCore.QCoreApplication.translate
@@ -197,5 +202,5 @@ class Ui_Dialog_RobotRun(object):
         self.group_num_input.setText(_translate("Dialog_RobotRun", "5"))
         self.delay_time_label.setText(_translate("Dialog_RobotRun", "Thời gian delay (phút)"))
         self.delay_time_input.setText(_translate("Dialog_RobotRun", "3"))
-        self.select_group_file_label.setText(_translate("Dialog_RobotRun", "Chọn nhóm tham gia"))
+        self.select_group_file_label.setText(_translate("Dialog_RobotRun", "Chọn file nhóm tham gia"))
         self.select_group_file_btn.setText(_translate("Dialog_RobotRun", "Select file"))
