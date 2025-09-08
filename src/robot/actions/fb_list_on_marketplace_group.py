@@ -532,6 +532,7 @@ def handle_detail_dialog(page: Page) -> bool:
                         if button_locator.get_attribute("aria-label").lower() == "post":
                             button_locator.scroll_into_view_if_needed(timeout=1000)
                             button_locator.click(timeout=1000)
+                            sleep(1)
                             is_posted = True
                             break
                     except Exception:
