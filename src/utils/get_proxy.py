@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 def get_proxy(proxy_raw: str) -> dict:
     buffer = io.BytesIO()
     curl = pycurl.Curl()
-    curl.setopt(pycurl.URL, proxy_raw)
+    curl.setopt(pycurl.URL, proxy_raw.strip())
     curl.setopt(pycurl.CONNECTTIMEOUT, 60)
     curl.setopt(pycurl.TIMEOUT, 60)
     headers = [
