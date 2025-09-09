@@ -58,16 +58,16 @@ def list_on_marketplace_group(
         join_group(page=page)
         create_dialog = get_create_dialog(page=page)
         if not create_dialog:
-            print(f"*********** {task.user_info.username} cannot sell! ***********")
-            return False
+            return "List marketplace (False: get_create_dialog)"
         is_created = handle_create_dialog(page, create_dialog, task.action_payload)
         if not is_created:
-            return False
+            return "List marketplace (False: handle_create_dialog)"
         is_list_more_place = handle_detail_dialog(page)
+
         if not is_list_more_place:
-            return False
+            return "List more place (False: handle_detail_dialog)"
         sleep(3)
-        return True
+        return "True"
 
     except PlaywrightTimeoutError as e:
         emit_progress_update(

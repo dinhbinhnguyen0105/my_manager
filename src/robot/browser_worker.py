@@ -9,6 +9,8 @@ from PyQt6.QtCore import QEventLoop, QTimer, QRunnable
 from src.my_types import BrowserWorkerSignals, BrowserTaskType, RobotSettingsType
 from src.robot.action_mapping import ACTION_MAP
 from src.utils.get_proxy import get_proxy
+import json
+import os
 from src.robot.actions import fb_utils  # Đảm bảo fb_utils được dùng hoặc xóa nếu không
 
 UDD_LOCKS = {}
@@ -185,6 +187,39 @@ class BrowserWorker(QRunnable):
                                 self._settings,
                                 self._signals,
                             )
+                            if self._browser.action_name == "list_on_group_and_share":
+                                result_file = "results.json"
+                                result_lock = threading.Lock()
+
+                                # Đảm bảo kết quả là kiểu dict hoặc có thể serialize
+                                result_data = {
+                                    "username": self._browser.user_info.username,
+                                    "action": self._browser.action_name,
+                                    "result": result,
+                                    "timestamp": datetime.now().isoformat(),
+                                }
+
+                                with result_lock:
+                                    # Đọc dữ liệu cũ nếu file đã tồn tại
+                                    if os.path.exists(result_file):
+                                        with open(
+                                            result_file, "r", encoding="utf-8"
+                                        ) as f:
+                                            try:
+                                                all_results = json.load(f)
+                                            except Exception:
+                                                all_results = []
+                                    else:
+                                        all_results = []
+
+                                    all_results.append(result_data)
+
+                                    # Ghi lại dữ liệu mới
+                                    with open(result_file, "w", encoding="utf-8") as f:
+                                        json.dump(
+                                            all_results, f, ensure_ascii=False, indent=2
+                                        )
+
                         except PlaywrightTimeoutError:
                             # Xử lý lỗi timeout của Playwright
                             self._signals.proxy_not_ready_signal.emit(
