@@ -63,7 +63,7 @@ def list_on_marketplace_group(
         if not is_created:
             return "List marketplace (False: handle_create_dialog)"
         is_list_more_place = handle_detail_dialog(page)
-
+        sleep(3)
         if not is_list_more_place:
             return "List more place (False: handle_detail_dialog)"
         sleep(3)
@@ -79,31 +79,21 @@ def list_on_marketplace_group(
 
 def join_group(page: Page):
     label_locators = page.locator(Selectors.button_label)
-    invite_locator: Optional[Locator] = None
     for i in range(label_locators.count()):
         btn_locator = label_locators.nth(i)
         if (
             btn_locator.get_attribute("aria-label").lower() == "invite"
             and btn_locator.is_visible()
         ):
-            invite_locator = label_locators.nth(i)
-    if not invite_locator:
-        for i in range(label_locators.count()):
-            btn_locator = label_locators.nth(i)
-            if (
-                btn_locator.get_attribute("aria-label").lower() == "join group"
-                and btn_locator.is_visible()
-            ):
-                btn_locator.click()
-                times = 0
-                while (
-                    btn_locator.get_attribute("aria-label").lower() == "join group"
-                    and times < 60
-                ):
-                    sleep(1)
-                    times += 1
-                # btn_locator.wait_for(state="hidden", timeout=MIN)
-                break
+            return
+    for i in range(label_locators.count()):
+        btn_locator = label_locators.nth(i)
+        if (
+            btn_locator.get_attribute("aria-label").lower() == "join group"
+            and btn_locator.is_visible()
+        ):
+            btn_locator.click()
+            return
 
 
 def get_create_dialog(page: Page) -> Union[bool, Locator]:
