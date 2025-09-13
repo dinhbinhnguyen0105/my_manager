@@ -1,7 +1,7 @@
 .venv
 .env
 .vscode
-.results.json
+results.json
 src/repositories
 dist
 build

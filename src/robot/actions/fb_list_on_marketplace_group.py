@@ -74,6 +74,27 @@ def list_on_marketplace_group(
             "ERROR: Timeout while navigating to Marketplace creation page."
         )
         raise Exception("ERR_PROXY_NOT_READY")
+    except Exception as e:
+        exc_type, exc_value, exc_traceback = sys.exc_info()
+        tb_list = traceback.extract_tb(exc_traceback)
+        for tb in reversed(tb_list):
+            if os.path.abspath(__file__) == os.path.abspath(tb.filename):
+                file_name = tb.filename
+                line_number = tb.lineno
+                function_name = tb.name
+                print(
+                    f"[\n\tError: {type(e).__name__}\n\tOccurred in file: {file_name}\n\tIn function: {function_name}\n\tAt line: {line_number}\n\t]"
+                )
+                break
+        else:
+            last_call = tb_list[-1]
+            file_name = last_call.filename
+            line_number = last_call.lineno
+            function_name = last_call.name
+            print(
+                f"[\n\tError: {type(e).__name__}\n\tOccurred in file: {file_name}\n\tIn function: {function_name}\n\tAt line: {line_number}\n\t]"
+            )
+        return f"Exception: {str(e)}"
     # ---------------------------------
 
 
