@@ -517,10 +517,21 @@ def handle_detail_dialog(page: Page) -> bool:
         group_locators = dialog_locator.locator(Selectors.group_checkbox)
         group_num = group_locators.count()
         sleep(random.uniform(0.5, 2))
-        close_btn_locator = dialog_locator.get_by_role(
-            role="button", name="Close", exact=False
-        )
-        close_btn_locator.click()
+        try:
+            marketplace_btn_locator = dialog_locator.get_by_role(
+                role="button", name="marketplace", exact=False
+            )
+            marketplace_btn_locator.click()
+            post_btn_locator = dialog_locator.get_by_role(
+                role="button", name="post", exact=False
+            )
+            post_btn_locator.click()
+        except Exception:
+            close_btn_locator = dialog_locator.get_by_role(
+                role="button", name="close", exact=False
+            )
+            close_btn_locator.click()
+
         while group_num > 0:
             new_dialog_locator = handle_open_list_more_place(page)
             new_group_locators = new_dialog_locator.locator(Selectors.group_checkbox)

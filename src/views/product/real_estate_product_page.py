@@ -392,8 +392,9 @@ class RealEstateProductPage(QWidget, Ui_PageREProduct):
         title = replace_template(self.current_product, title_template)
         # title = title[:100]
         description = replace_template(self.current_product, description_template)
-        footer = init_footer_content(self.current_product)
-        self.detail_text.setPlainText(f"{title.upper()} \n\n {description} \n{footer}")
+        self.detail_text.setPlainText(f"{title.upper()} \n\n {description}")
+        # footer = init_footer_content(self.current_product)
+        # self.detail_text.setPlainText(f"{title.upper()} \n\n {description} \n{footer}")
 
     def display_image(self, image_paths: List[str]):
         if not len(image_paths):

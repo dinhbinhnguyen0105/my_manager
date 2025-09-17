@@ -15,24 +15,8 @@ if __name__ == "__main__":
                 date_object = datetime.strptime(item["created_at"], "%Y-%m-%d %H:%M:%S")
             current_time = datetime.now()
             diffurent_date = current_time - date_object
-            # "".strip()
-            if item["username"].strip() in [
-                "Abe Nguyen",
-                "MiênNhâm",
-                "Aurora Mai",
-                "Genesis Mai",
-                "Nguyen Rusty",
-                "Cao Thị Tuyết Trinh",
-                "Huỳnh Ngọc Thảo",
-                "Thảo My Lê",
-                "June Phạm",
-            ]:
-                item["user_group"] = 30
-
-            if item["user_group"] == 1:
-                item["user_group"] = 10
-            elif item["user_group"] == 2:
-                item["user_group"] = 20
+            if item["user_group"] < 0:
+                continue
 
             # if ".without_group_marketplace." in item["note"]:
             #     item["note"] = item["note"].replace("without_group_marketplace.", "")

@@ -33,6 +33,10 @@ class BaseModel(QSqlTableModel):
                 status_value = None
             if status_value == 0:
                 return QBrush(QColor("#e7625f"))
+            if index.row() % 2 == 0:
+                return QBrush(QColor("#d3eaf2"))
+            else:
+                return QBrush(QColor("#f8e3ec"))
         return super().data(index, role)
 
     def get_record_ids(self, row: List[int]) -> List[Any]:

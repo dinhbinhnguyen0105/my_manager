@@ -39,10 +39,14 @@ class BrowserManager(QObject):
 
         # --- LOGIC MỚI CHO VỊ TRÍ CỬA SỔ ---
         self._available_window_positions: deque[Tuple[int, int]] = deque()
-        self._max_cols = 4  # Số cột tối đa bạn muốn xếp browser trên màn hình
+        self._max_cols = 16  # Số cột tối đa bạn muốn xếp browser trên màn hình
         # Kích thước cửa sổ browser mặc định (desktop) để tính toán vị trí
-        self._window_desktop_width = 960
-        self._window_desktop_height = int(self._window_desktop_width * 0.56)
+        self._window_desktop_width = 960 if not self._settings.is_mobile else 375
+        self._window_desktop_height = int(
+            self._window_desktop_width * 0.56
+            if not self._settings.is_mobile
+            else self._window_desktop_width * 1.5
+        )
 
         self._initialize_window_positions()
         # --- KẾT THÚC LOGIC MỚI ---
@@ -62,26 +66,45 @@ class BrowserManager(QObject):
         self.threadpool = QThreadPool.globalInstance()
 
     def _initialize_window_positions(self):
-        """Khởi tạo các vị trí cửa sổ có thể có trên màn hình."""
+        """
+        Calculates 16 window positions in a grid, wrapping to the next row
+        with a 200px offset when the screen edge is reached.
+        """
         screen_width = self._screen_size[0]
         screen_height = self._screen_size[1]
 
-        # Tính toán số hàng và số cột thực tế có thể hiển thị
-        effective_cols = min(self._max_cols, screen_width // self._window_desktop_width)
-        effective_rows = screen_height // self._window_desktop_height
+        # Fixed number of positions to generate
+        total_positions = 16
 
-        # Đảm bảo có ít nhất 1 hàng 1 cột nếu màn hình quá nhỏ
-        if effective_cols == 0:
-            effective_cols = 1
-        if effective_rows == 0:
-            effective_rows = 1
+        # Offset for next row/col
+        offset = 200
 
-        for row in range(effective_rows):
-            for col in range(effective_cols):
-                pos_x = col * self._window_desktop_width
-                pos_y = row * self._window_desktop_height
-                self._available_window_positions.append((pos_x, pos_y))
-        # print(f"Initialized {len(self._available_window_positions)} available window positions.")
+        # Store the final list of valid positions
+        # self._available_window_positions = []
+
+        # Keep track of the current position to calculate the next
+        pos_x = 0
+        pos_y = 0
+
+        for i in range(total_positions):
+            # Add the current position to the list
+            self._available_window_positions.append((pos_x, pos_y))
+
+            # Calculate the next potential position
+            next_pos_x = pos_x + offset
+
+            # Check if the next position exceeds the screen width
+            if next_pos_x + self._window_desktop_width > screen_width:
+                # If it does, wrap to the next row
+                pos_x = 0
+                pos_y += offset
+
+                # Check if the new row position is off-screen. If so, stop.
+                if pos_y + self._window_desktop_height > screen_height:
+                    break
+            else:
+                # If it doesn't, just move to the next column
+                pos_x = next_pos_x
 
     def add_browsers(
         self, list_browsers: List[BrowserTaskType], list_raw_proxies: List[str]
@@ -206,7 +229,9 @@ class BrowserManager(QObject):
             pos_to_release = self._in_progress_tasks[browser.browser_id][
                 "window_position"
             ]
-            self._available_window_positions.append(pos_to_release)  # Giải phóng vị trí
+            self._available_window_positions.appendleft(
+                pos_to_release
+            )  # Giải phóng vị trí
             if raw_proxy not in self._pending_raw_proxies:
                 self._pending_raw_proxies.append(raw_proxy)
             del self._in_progress_tasks[browser.browser_id]
@@ -226,7 +251,9 @@ class BrowserManager(QObject):
             pos_to_release = self._in_progress_tasks[browser.browser_id][
                 "window_position"
             ]
-            self._available_window_positions.append(pos_to_release)  # Giải phóng vị trí
+            self._available_window_positions.appendleft(
+                pos_to_release
+            )  # Giải phóng vị trí
             del self._in_progress_tasks[browser.browser_id]
             # print(f"Released position {pos_to_release} for {browser.user_info.username} (error).")
         self.try_start_browsers()  # Cố gắng khởi động tác vụ mới
@@ -253,7 +280,9 @@ class BrowserManager(QObject):
             ]
             if raw_proxy not in self._pending_raw_proxies:
                 self._pending_raw_proxies.append(raw_proxy)
-            self._available_window_positions.append(pos_to_release)  # Giải phóng vị trí
+            self._available_window_positions.appendleft(
+                pos_to_release
+            )  # Giải phóng vị trí
             del self._in_progress_tasks[browser.browser_id]
             # print(f"Released position {pos_to_release} for {browser.user_info.username} (succeeded).")
         self.try_start_browsers()  # Cố gắng khởi động tác vụ mới
@@ -271,7 +300,9 @@ class BrowserManager(QObject):
             pos_to_release = self._in_progress_tasks[browser.browser_id][
                 "window_position"
             ]
-            self._available_window_positions.append(pos_to_release)  # Giải phóng vị trí
+            self._available_window_positions.appendleft(
+                pos_to_release
+            )  # Giải phóng vị trí
             del self._in_progress_tasks[browser.browser_id]
             # print(f"Released position {pos_to_release} for {browser.user_info.username} (proxy unavailable).")
         self.try_start_browsers()  # Cố gắng khởi động tác vụ mới
@@ -289,7 +320,9 @@ class BrowserManager(QObject):
             pos_to_release = self._in_progress_tasks[browser.browser_id][
                 "window_position"
             ]
-            self._available_window_positions.append(pos_to_release)  # Giải phóng vị trí
+            self._available_window_positions.appendleft(
+                pos_to_release
+            )  # Giải phóng vị trí
             del self._in_progress_tasks[browser.browser_id]
             # print(f"Released position {pos_to_release} for {browser.user_info.username} (proxy not ready).")
 
@@ -325,7 +358,7 @@ class BrowserManager(QObject):
             pos_to_release = self._in_progress_tasks[browser.browser_id][
                 "window_position"
             ]
-            self._available_window_positions.append(pos_to_release)
+            self._available_window_positions.appendleft(pos_to_release)
             del self._in_progress_tasks[browser.browser_id]
             print(
                 f"Paused task {browser.user_info.username} for phone number, released position {pos_to_release}."
@@ -341,7 +374,7 @@ class BrowserManager(QObject):
             pos_to_release = self._in_progress_tasks[browser.browser_id][
                 "window_position"
             ]
-            self._available_window_positions.append(pos_to_release)
+            self._available_window_positions.appendleft(pos_to_release)
             del self._in_progress_tasks[browser.browser_id]
             print(
                 f"Paused task {browser.user_info.username} for OTP, released position {pos_to_release}."

@@ -26,8 +26,8 @@ def get_proxy(proxy_raw: str) -> dict:
         data = None
         parsed_url = urlparse(proxy_raw)
         domain = parsed_url.netloc
-        if domain == "proxyxoay.shop" or domain == "proxyxoay.org":
-            if res.get("status") == 100 and "proxyhttp" in res:
+        if domain in ["proxyxoay.shop", "proxyxoay.org", "api.proxyxoay.org"]:
+            if "proxyhttp" in res:
                 raw = res["proxyhttp"]
                 ip, port, user, pwd = raw.split(":", 3)
                 data = {
@@ -35,10 +35,9 @@ def get_proxy(proxy_raw: str) -> dict:
                     "password": pwd,
                     "server": f"{ip}:{port}",
                 }
-
         else:
             raise Exception(f"Invalid domain ({domain})")
-
+        # res["status"] = 100
         return {
             "data": data,
             "status": res.get("status"),
