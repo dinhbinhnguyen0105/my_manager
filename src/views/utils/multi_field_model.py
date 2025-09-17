@@ -1,8 +1,5 @@
 # src/views/utils/multi_field_model.py
-from PyQt6.QtCore import (
-    Qt,
-    QSortFilterProxyModel,
-)
+from PyQt6.QtCore import Qt, QSortFilterProxyModel, QModelIndex
 
 from PyQt6.QtGui import QBrush, QColor
 
@@ -14,24 +11,38 @@ class MultiFieldFilterProxyModel(QSortFilterProxyModel):
         super().__init__(parent)
         self.filters = {}
 
-    def data(self, index, role=Qt.ItemDataRole.DisplayRole):
+    def data(self, index: QModelIndex, role: int = Qt.ItemDataRole.DisplayRole):
+        # Lấy dữ liệu từ source model trước
+        source_index = self.mapToSource(index)
+
+        # Lấy status_value từ source model để xử lý màu
+        status_col = self.sourceModel().fieldIndex("status")
+        status_value = -1  # Giá trị mặc định
+        if status_col != -1:
+            status_index = self.sourceModel().index(source_index.row(), status_col)
+            status_text = self.sourceModel().data(
+                status_index, Qt.ItemDataRole.DisplayRole
+            )
+            try:
+                status_value = int(status_text)
+            except (ValueError, TypeError):
+                pass
+
+        # Xử lý màu nền (BackgroundRole)
         if role == Qt.ItemDataRole.BackgroundRole:
-            # lấy status từ source model
-            source_index = self.mapToSource(index)
-            status_col = self.sourceModel().fieldIndex("status")
-            if status_col != -1:
-                status_index = self.sourceModel().index(source_index.row(), status_col)
-                status = self.sourceModel().data(
-                    status_index, Qt.ItemDataRole.DisplayRole
-                )
-                try:
-                    if int(status) == 0:
-                        return QBrush(QColor("#e7625f"))
-                except:
-                    pass
-            # fallback: tô màu theo row
+            if status_value == 0:
+                return QBrush(QColor("#e7625f"))  # Màu nền ưu tiên cho status == 0
+
+            # Tô màu xen kẽ nếu không có điều kiện đặc biệt
             return QBrush(QColor("#d3eaf2" if index.row() % 2 == 0 else "#f8e3ec"))
 
+        # Xử lý màu chữ (ForegroundRole)
+        if role == Qt.ItemDataRole.ForegroundRole:
+            # Nếu status là 0, tô màu chữ trắng để dễ đọc trên nền đỏ
+            # if status_value == 0:
+            return QBrush(QColor("#000000"))
+
+        # Trả về giá trị mặc định cho các role khác
         return super().data(index, role)
 
     def set_filter(self, column, text):
