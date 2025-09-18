@@ -34,6 +34,7 @@ class Selectors:
     action_menu = 'div[role="menu"]'
     status = 'div[role="status"]'
     group_checkbox = 'div[aria-checked="false"][role="checkbox"]'
+    time_line = 'a[href*="https://www.facebook.com/profile.php?id="]'
 
 
 def list_on_marketplace_group(
@@ -121,26 +122,33 @@ def get_create_dialog(page: Page) -> Union[bool, Locator]:
     # label_locators = page.locator(Selectors.button_label)
     sell_btn_locator: Optional[Locator] = None
     sell_dialog_locator: Optional[Locator] = None
-    times = 0
-    while not sell_btn_locator and times < 60:
-        button_locators = page.locator(Selectors.button_label)
-        for i in range(button_locators.count()):
-            btn_locator = button_locators.nth(i)
-            if (
-                btn_locator.get_attribute("aria-label").lower() == "sell something"
-                and btn_locator.is_visible()
-            ):
-                btn_locator.wait_for(state="attached")
-                sell_btn_locator = btn_locator
-                break
-        times += 1
-        sleep(1)
+    # times = 0
+    # while not sell_btn_locator and times < 60:
+    #     button_locators = page.locator(Selectors.button_label)
+    #     for i in range(button_locators.count()):
+    #         btn_locator = button_locators.nth(i)
+    #         if (
+    #             btn_locator.get_attribute("aria-label").lower() == "sell something"
+    #             and btn_locator.is_visible()
+    #         ):
+    #             btn_locator.wait_for(state="attached")
+    #             sell_btn_locator = btn_locator
+    #             break
+    #     times += 1
+    #     sleep(1)
+    # if not sell_btn_locator:
+    #     print("Cannot get click 'Sell something' button.")
+    #     return False
 
-    if not sell_btn_locator:
-        print("Cannot get click 'Sell something' button.")
-        return False
+    # sell_btn_locator.click()
 
-    sell_btn_locator.click()
+    timeline_locator = page.locator(Selectors.time_line)
+    timeline_locator.wait_for(state="visible", timeout=30000)
+    container_locator = timeline_locator.locator("..")
+    sell_something_locator = container_locator.get_by_role(
+        role="button", name="sell something", exact=False
+    )
+    sell_something_locator.click()
 
     times = 0
     while not sell_dialog_locator and times < 60:
