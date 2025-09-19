@@ -330,15 +330,15 @@ class BrowserManager(QObject):
         self._pending_browsers.appendleft(browser)
 
         # Delay 10s trước khi thử lại khởi động browser
-        _msg = f"Will retry with {raw_proxy} after 10 seconds."
-        print(_msg, end="\r")
+        # _msg = f"Will retry with {raw_proxy} after 10 seconds."
+        # print(_msg, end="\r")
 
         def call_start():
             # Đẩy proxy này về cuối hàng chờ, cho phép nó "hạ nhiệt"
             if raw_proxy not in self._pending_raw_proxies:
                 self._pending_raw_proxies.append(raw_proxy)
 
-            print(" " * len(_msg), end="\r")
+            # print(" " * len(_msg), end="\r")
             # print(new_message, end="\r")
             self.try_start_browsers()
 
