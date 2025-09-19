@@ -35,6 +35,8 @@ def get_proxy(proxy_raw: str) -> dict:
                     "password": pwd,
                     "server": f"{ip}:{port}",
                 }
+        # if domain in ["api.proxyxoay.org"]:
+        #     res["status"] = 100
         else:
             raise Exception(f"Invalid domain ({domain})")
         # res["status"] = 100
