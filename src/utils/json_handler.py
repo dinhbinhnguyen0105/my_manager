@@ -2,7 +2,9 @@ import json
 from datetime import datetime
 
 if __name__ == "__main__":
-    file_path = "/Volumes/KINGSTON/Dev/python/python.my-manager.v3/users_macmini.json"
+    file_path = (
+        "/Volumes/KINGSTON/Dev/python/python.my-manager.v3/exports/users_macmini.json"
+    )
     data = []
     with open(file=file_path, mode="r", encoding="utf8") as f:
         data = json.load(f)
@@ -17,6 +19,7 @@ if __name__ == "__main__":
             diffurent_date = current_time - date_object
             if item["user_group"] < 0:
                 continue
+            item["type"] = item["type"].replace("re.r", "re.s")
 
             # if ".without_group_marketplace." in item["note"]:
             #     item["note"] = item["note"].replace("without_group_marketplace.", "")

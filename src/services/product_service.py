@@ -1,4 +1,5 @@
 # src/services/product_service.py
+from datetime import datetime, timedelta
 import uuid
 import glob
 import os
@@ -247,6 +248,7 @@ class RealEstateProductService(BaseService):
         sql = f"""
             SELECT id FROM {self.model.tableName()}
             WHERE transaction_type = ? AND status = 1
+            AND (julianday('now') - julianday(updated_at)) <= 7
             ORDER BY RANDOM() LIMIT 1
         """
         query.prepare(sql)
