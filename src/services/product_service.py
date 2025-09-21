@@ -119,15 +119,17 @@ class RealEstateProductService(BaseService):
         product.status = new_status
         update_success = self.update(record_id, product)
         if update_success:
-            # print(
-            #     f"[{self.__class__.__name__}.toggle_status] Successfully toggled status for record_id '{record_id}' to {new_status}."
-            # )
             return True
         else:
             print(
                 f"[{self.__class__.__name__}.toggle_status] Failed to update status for record_id '{record_id}'."
             )
             return False
+
+    def renew_products(self, record_ids: List[int]):
+        for record_id in record_ids:
+            product = self.read(record_id)
+            self.update(record_id=record_id, payload=product)
 
     def initialize_new_pid(self, transaction_type: str) -> str:
         """

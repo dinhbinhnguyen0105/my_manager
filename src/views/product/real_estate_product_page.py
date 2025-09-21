@@ -194,9 +194,9 @@ class RealEstateProductPage(QWidget, Ui_PageREProduct):
         self.products_table.setSelectionBehavior(
             self.products_table.SelectionBehavior.SelectRows
         )
-        self.products_table.setSelectionMode(
-            self.products_table.SelectionMode.SingleSelection
-        )
+        # self.products_table.setSelectionMode(
+        #     self.products_table.SelectionMode.SingleSelection
+        # )
         self.products_table.setEditTriggers(
             self.products_table.EditTrigger.NoEditTriggers
         )
@@ -258,14 +258,17 @@ class RealEstateProductPage(QWidget, Ui_PageREProduct):
 
         update_action = QAction("Update", self)
         delete_action = QAction("Delete", self)
+        renew_update_date = QAction("Renew update date", self)
         update_action.triggered.connect(
             lambda _, record_id=id_value: self.on_update_product(record_id)
         )
         delete_action.triggered.connect(
             lambda _, record_id=id_value: self.handle_delete_product(record_id)
         )
+        renew_update_date.triggered.connect(self.handle_renew_update_date)
         menu.addAction(update_action)
         menu.addAction(delete_action)
+        menu.addAction(renew_update_date)
 
         menu.popup(global_pos)
 
@@ -447,3 +450,9 @@ class RealEstateProductPage(QWidget, Ui_PageREProduct):
             QMessageBox.about(self, "Imported file", f"Import to {file_path}")
         else:
             QMessageBox.critical(self, "Error", "Failed to import data")
+
+    @pyqtSlot()
+    def handle_renew_update_date(self):
+        product_ids = self.get_selected_ids()
+        self._product_controller.renew_products(product_ids)
+        pass

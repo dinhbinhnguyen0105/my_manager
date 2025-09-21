@@ -148,6 +148,9 @@ class RealEstateProductController(BaseController):
             )
             return False
 
+    def renew_products(self, product_ids: List[int]):
+        self.service.renew_products(product_ids)
+
     def initialize_new_pid(self, transaction_type: str) -> str:
         try:
             self.controller_signals.finished_signal.emit(
