@@ -1,134 +1,554 @@
 [
   {
+    "username": "DinhBinh Nguyen",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T08:29:25.614740"
+  },
+  {
+    "username": "Landen Nguyen",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T08:31:55.079333"
+  },
+  {
+    "username": "Kazutoshi Watanabe",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T08:34:26.186933"
+  },
+  {
+    "username": "Nguyen Laurie",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T08:37:00.467292"
+  },
+  {
+    "username": "Katsunari Otsuka ",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T08:39:26.558356"
+  },
+  {
+    "username": "Tú Tiên",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T08:41:51.033475"
+  },
+  {
+    "username": "Long Quý",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T08:44:15.970851"
+  },
+  {
     "username": "Hường Mỹ",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:12:27.740315"
+    "timestamp": "2025-10-07T08:46:49.614983"
+  },
+  {
+    "username": "Diya Nguyen",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T08:49:17.634931"
+  },
+  {
+    "username": "Miriam Nguyen",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T08:51:40.424652"
+  },
+  {
+    "username": "Nguyen Kevin",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T08:54:07.448288"
+  },
+  {
+    "username": "Ocean Nguyen",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T08:56:30.684233"
+  },
+  {
+    "username": "Tú Châu",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T08:59:02.573261"
+  },
+  {
+    "username": "Nguyen Harry",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:01:40.166469"
+  },
+  {
+    "username": "Jaiden Nguyen",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:04:03.622474"
+  },
+  {
+    "username": "Davinia Nguyen",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:06:32.465926"
+  },
+  {
+    "username": "Shena Nguyen",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:10:10.285911"
+  },
+  {
+    "username": "Eppie Nguyen",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:12:38.765672"
+  },
+  {
+    "username": "Cayla Nguyen",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:15:03.664030"
+  },
+  {
+    "username": "Bình Dương Nguyễn",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:17:40.235870"
+  },
+  {
+    "username": "Trần Thị Kim Loan",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:20:10.461926"
+  },
+  {
+    "username": "Đặng Thị Hồng Nhung",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:22:37.102334"
+  },
+  {
+    "username": "Đinh Thị Bích Ngân",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:25:11.179160"
+  },
+  {
+    "username": "Lâm Thị Yến Nhi",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:27:44.254223"
+  },
+  {
+    "username": "Phan Thị Thanh Hương",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:30:16.912349"
+  },
+  {
+    "username": "Phan Thị Thùy Anh",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:32:39.165234"
+  },
+  {
+    "username": "Phan Thị Phương Nghi",
+    "action": "list_on_group_and_share",
+    "result": "List marketplace (False: handle_create_dialog)",
+    "timestamp": "2025-10-07T09:33:23.925394"
+  },
+  {
+    "username": "Cao Diễm Phương",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:35:48.979091"
+  },
+  {
+    "username": "Đỗ Kim Loan",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:38:18.873950"
+  },
+  {
+    "username": "Hoàng Thị Thanh Nga",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:40:43.829384"
+  },
+  {
+    "username": "Lâm Thị Bích Thủy",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:43:10.422467"
+  },
+  {
+    "username": "Châu Thị Quế Trân",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:45:39.306720"
+  },
+  {
+    "username": "Camila Hồ",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:48:11.029576"
+  },
+  {
+    "username": "Nguyễn Ngọc Anh",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:50:56.285524"
+  },
+  {
+    "username": "Hồ Thị Minh Tâm",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:53:21.950706"
+  },
+  {
+    "username": "Nguyễn Thị Tường Vy",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T09:55:51.569126"
+  },
+  {
+    "username": "Đỗ Thanh Thảo",
+    "action": "list_on_group_and_share",
+    "result": "List more place (False: handle_detail_dialog)",
+    "timestamp": "2025-10-07T10:09:26.584944"
+  },
+  {
+    "username": "Mai Thục Quyên",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T10:12:15.778065"
+  },
+  {
+    "username": "Trần Thị Nguyệt Thu",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T10:14:42.179880"
+  },
+  {
+    "username": "Lê Quỳnh Mai",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T10:17:08.766828"
+  },
+  {
+    "username": "Cao Hạnh Nhi",
+    "action": "list_on_group_and_share",
+    "result": "List marketplace (False: handle_create_dialog)",
+    "timestamp": "2025-10-07T10:17:51.266704"
+  },
+  {
+    "username": "Trần Thị Ánh Tuyết",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T10:20:45.851484"
+  },
+  {
+    "username": "Nguyễn Thị Thu Thảo",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T10:23:14.604453"
+  },
+  {
+    "username": "Đặng Ngọc Quyên",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T10:25:45.959285"
+  },
+  {
+    "username": "Hồ Thị Thùy Dung",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T10:29:27.997130"
+  },
+  {
+    "username": "Audrey Hoàng",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T10:32:24.764240"
+  },
+  {
+    "username": "Huỳnh Diễm My",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T10:34:52.265972"
+  },
+  {
+    "username": "Isla Vũ",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T10:37:19.438709"
+  },
+  {
+    "username": "Phan Thị Diễm Hương",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T10:39:58.227104"
+  },
+  {
+    "username": "Grace Phạm",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T10:43:18.259961"
+  },
+  {
+    "username": "Bùi Thùy Trang",
+    "action": "list_on_group_and_share",
+    "result": "List more place (False: handle_detail_dialog)",
+    "timestamp": "2025-10-07T10:54:23.167640"
+  },
+  {
+    "username": "Mai Diễm Hương",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T10:56:54.820455"
+  },
+  {
+    "username": "Phan Bảo Trâm",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T10:59:21.299311"
+  },
+  {
+    "username": "Đặng Thảo My",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:01:44.766848"
+  },
+  {
+    "username": "Cao Thị Hạnh Nhi",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:04:17.532969"
+  },
+  {
+    "username": "Diễm Quỳnh Lê",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:07:54.553537"
+  },
+  {
+    "username": "Willow Hoàng",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:10:20.571530"
+  },
+  {
+    "username": "Phan Thị Bích Ngọc",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:12:52.093714"
+  },
+  {
+    "username": "Đinh Thúy Hằng",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:15:16.370847"
+  },
+  {
+    "username": "Alice Châu",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:17:39.546465"
+  },
+  {
+    "username": "Lena Châu",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:20:07.741571"
+  },
+  {
+    "username": "Vivian Ngô",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:22:43.271611"
+  },
+  {
+    "username": "Trương Thị Hồng Phấn",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:25:08.864830"
+  },
+  {
+    "username": "Ruby Đỗ",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:27:36.885321"
+  },
+  {
+    "username": "Wren Hoàng",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:31:13.058184"
+  },
+  {
+    "username": "Luna Huỳnh",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:33:45.243664"
+  },
+  {
+    "username": "Layla Dương",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:36:21.889205"
+  },
+  {
+    "username": "Đan Vy Mai",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:38:53.675402"
+  },
+  {
+    "username": "Margot Ngô",
+    "action": "list_on_group_and_share",
+    "result": "List marketplace (False: get_create_dialog)",
+    "timestamp": "2025-10-07T11:40:06.903396"
+  },
+  {
+    "username": "Tuyết Mai Nguyễn",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:42:35.195211"
+  },
+  {
+    "username": "Võ Kim Ngân",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:45:10.339259"
   },
   {
     "username": "Phương Vy Đặng",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:14:55.054383"
+    "timestamp": "2025-10-07T11:48:47.777600"
+  },
+  {
+    "username": "Freya Đỗ",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:51:22.764475"
+  },
+  {
+    "username": "Savannah Phạm",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T11:54:06.646666"
   },
   {
     "username": "Sophie Đặng",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:17:30.030240"
+    "timestamp": "2025-10-07T11:56:45.926008"
   },
   {
     "username": "Blair Đỗ",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:20:12.865578"
+    "timestamp": "2025-10-07T12:00:13.654345"
   },
   {
     "username": "Hoàng Cẩm Nhung",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:22:34.066428"
+    "timestamp": "2025-10-07T12:02:58.547036"
+  },
+  {
+    "username": "Vũ Nguyệt Cầm",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T12:05:57.376281"
+  },
+  {
+    "username": "Chloe Lê",
+    "action": "list_on_group_and_share",
+    "result": "True",
+    "timestamp": "2025-10-07T12:09:11.285857"
   },
   {
     "username": "Mia Huỳnh",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:25:04.181779"
+    "timestamp": "2025-10-07T12:11:34.405932"
   },
   {
     "username": "Phoebe Đinh",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:27:27.979567"
+    "timestamp": "2025-10-07T12:14:04.529976"
   },
   {
     "username": "Eden Ngô",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:30:03.966629"
+    "timestamp": "2025-10-07T12:16:41.826183"
   },
   {
     "username": "Châu Quế Trân",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:32:36.115672"
-  },
-  {
-    "username": "Paige Dương",
-    "action": "list_on_group_and_share",
-    "result": "True",
-    "timestamp": "2025-09-21T16:35:00.405854"
+    "timestamp": "2025-10-07T12:19:36.472434"
   },
   {
     "username": "Jasmine Lê",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:37:29.471336"
-  },
-  {
-    "username": "Bảo An Lê",
-    "action": "list_on_group_and_share",
-    "result": "True",
-    "timestamp": "2025-09-21T16:39:55.437023"
+    "timestamp": "2025-10-07T12:23:12.120943"
   },
   {
     "username": "Hazel Hồ",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:42:23.218631"
+    "timestamp": "2025-10-07T12:25:40.788173"
   },
   {
     "username": "Maya Nguyễn",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:44:50.124184"
+    "timestamp": "2025-10-07T12:28:11.498089"
   },
   {
     "username": "Uyên Phương Bùi",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:47:11.293797"
-  },
-  {
-    "username": "Rowan Vũ",
-    "action": "list_on_group_and_share",
-    "result": "True",
-    "timestamp": "2025-09-21T16:49:47.558834"
+    "timestamp": "2025-10-07T12:31:52.041296"
   },
   {
     "username": "Iris Đặng",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:52:10.900873"
+    "timestamp": "2025-10-07T12:34:21.335774"
   },
   {
     "username": "Clara Ngô",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:54:40.032444"
+    "timestamp": "2025-10-07T12:36:58.522709"
   },
   {
     "username": "Kinsley Nguyễn",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T16:57:08.115075"
-  },
-  {
-    "username": "Alice Trần",
-    "action": "list_on_group_and_share",
-    "result": "True",
-    "timestamp": "2025-09-21T16:59:35.104089"
+    "timestamp": "2025-10-07T12:39:30.992524"
   },
   {
     "username": "Vân Anh Đặng",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T17:01:59.462498"
+    "timestamp": "2025-10-07T12:41:50.794680"
   },
   {
     "username": "Mỹ Duyên Huỳnh",
     "action": "list_on_group_and_share",
     "result": "True",
-    "timestamp": "2025-09-21T17:04:27.136917"
+    "timestamp": "2025-10-07T12:44:37.806004"
   }
 ]

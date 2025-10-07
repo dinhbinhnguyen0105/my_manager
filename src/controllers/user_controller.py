@@ -215,7 +215,9 @@ class UserController(BaseController):
                 browser = BrowserTaskType(
                     user_info=user_info,
                     action_name="launch_browser",
-                    action_payload=LaunchPayloadType(url="https://www.facebook.com/marketplace/you/selling"),
+                    action_payload=LaunchPayloadType(
+                        url="https://www.facebook.com/marketplace/you/selling"
+                    ),
                     is_mobile=is_mobile,
                     udd=os.path.join(udd_container, str(user_info.my_id)),
                     headless=False,
@@ -275,6 +277,8 @@ class UserController(BaseController):
     def _on_check_live_task_succeeded(self, record_id: int, uid: str, is_live: bool):
         self._user_service.update_status(record_id, 1 if is_live else 0)
         self.current_check_user_progress_num += 1
+        if not is_live:
+            print(f"{record_id} - {uid} : {is_live}")
         self.controller_signals.progress_signal.emit(
             f"{record_id} - {uid} : {is_live}",
             [self.current_check_user_progress_num, len(self.list_selected_uid)],

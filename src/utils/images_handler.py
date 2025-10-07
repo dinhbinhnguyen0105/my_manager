@@ -2,7 +2,7 @@ import os
 from PIL import Image
 
 
-def overlay_logo_on_images(logo_path, image_paths, dest_paths, opacity=0.7):
+def overlay_logo_on_images(logo_path, image_paths, dest_paths, opacity=0.3):
     """
     Chèn logo lên một loạt hình ảnh và lưu vào các đường dẫn file đích.
 
@@ -33,7 +33,9 @@ def overlay_logo_on_images(logo_path, image_paths, dest_paths, opacity=0.7):
             main_image = Image.open(image_path).convert("RGBA")
             main_width, main_height = main_image.size
 
-            new_logo_width = int(main_width * 0.3)
+            new_logo_width = int(
+                main_width * 0.3 if main_width < main_height else main_height * 0.3
+            )
             logo_width, logo_height = logo.size
             new_logo_height = int(logo_height * (new_logo_width / logo_width))
             resized_logo = logo.resize((new_logo_width, new_logo_height), Image.LANCZOS)

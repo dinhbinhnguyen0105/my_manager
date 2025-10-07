@@ -4,7 +4,7 @@ import uuid
 import glob
 import os
 import shutil
-from typing import Optional, List
+from typing import Optional, List, Any
 from PyQt6.QtSql import QSqlQuery
 
 from src.services.base_service import BaseService, transaction
@@ -28,27 +28,61 @@ class RealEstateProductService(BaseService):
             )
         super().__init__(model)
 
+    def _normalize_float_field(self, value: Any) -> float:
+        """
+        Chuyển đổi giá trị thành float.
+        Nếu là string, thay thế ',' bằng '.' và cố gắng chuyển sang float.
+        Nếu thất bại, trả về 0.0.
+        """
+        if value is None or value == "":
+            return 0.0
+
+        if isinstance(value, (int, float)):
+            return float(value)
+
+        if isinstance(value, str):
+            try:
+                # Xử lý trường hợp "3,5" hoặc "3.5"
+                new_value = value.replace(",", ".")
+                return float(new_value)
+            except ValueError:
+                return 0.0
+
+        # Trường hợp không phải string, int, float
+        return 0.0
+
+    def _validate_and_normalize_payload(self, payload: RealEstateProductType):
+        """
+        Thực hiện logic validation và chuẩn hóa dữ liệu cho các trường float:
+        'price', 'area', 'structure'.
+        """
+        float_fields = ["price", "area", "structure"]
+        for field in float_fields:
+            if hasattr(payload, field):
+                value = getattr(payload, field)
+                # Sử dụng hàm helper để chuẩn hóa giá trị
+                normalized_value = self._normalize_float_field(value)
+                setattr(payload, field, normalized_value)
+        return payload
+
     def create(
         self,
         image_dir_container: str,
         image_paths: List[str],
         payload: RealEstateProductType,
     ) -> bool:
+        # 1. Chuẩn hóa và validate payload (price, area, structure -> float/0)
+        payload = self._validate_and_normalize_payload(payload)
+
+        # 2. Tạo thư mục sản phẩm
         product_dir = os.path.abspath(os.path.join(image_dir_container, payload.pid))
         if not os.path.exists(product_dir):
             os.makedirs(product_dir)
 
-        for field in ["price", "area", "structure"]:
-            if hasattr(payload, field):
-                value = getattr(payload, field)
-                if not value:
-                    value = 0
-                if isinstance(value, str):
-                    new_value = float(value.replace(",", "."))
-                    setattr(payload, field, new_value)
         logo_path = os.path.join(image_dir_container, "logo.png")
         dest_paths = []
 
+        # 3. Chuẩn bị đường dẫn đích và tên file mới
         for idx, image_path in enumerate(image_paths):
             if os.path.isfile(image_path):
                 ext = os.path.splitext(image_path)[1]
@@ -58,11 +92,16 @@ class RealEstateProductService(BaseService):
                 new_name = f"{base_name}_{idx+1}{ext}"
                 dest_path = os.path.join(product_dir, new_name)
                 dest_paths.append(dest_path)
+
+        # 4. Xử lý ảnh (overlay logo hoặc copy)
         if os.path.isfile(logo_path):
             overlay_logo_on_images(logo_path, image_paths, dest_paths)
         else:
             for idx, img in enumerate(image_paths):
-                shutil.copy(img, dest_paths[idx])
+                if idx < len(dest_paths):
+                    shutil.copy(img, dest_paths[idx])
+
+        # 5. Cập nhật image_dir và tạo bản ghi
         payload.image_dir = product_dir
         return super().create(payload)
 
@@ -73,6 +112,8 @@ class RealEstateProductService(BaseService):
         return super().read_all()
 
     def update(self, record_id: int, payload: RealEstateProductType) -> bool:
+        # Thêm bước chuẩn hóa và validate payload
+        payload = self._validate_and_normalize_payload(payload)
         return super().update(record_id, payload)
 
     def delete(self, record_id: int) -> bool:
@@ -117,6 +158,9 @@ class RealEstateProductService(BaseService):
             return False
 
         product.status = new_status
+        # Cần chuẩn hóa dữ liệu trước khi update, mặc dù toggle_status chỉ thay đổi status,
+        # nhưng việc update full object cần đảm bảo dữ liệu float vẫn hợp lệ
+        product = self._validate_and_normalize_payload(product)
         update_success = self.update(record_id, product)
         if update_success:
             return True
@@ -129,6 +173,8 @@ class RealEstateProductService(BaseService):
     def renew_products(self, record_ids: List[int]):
         for record_id in record_ids:
             product = self.read(record_id)
+            # Cần đảm bảo dữ liệu float hợp lệ trước khi update
+            product = self._validate_and_normalize_payload(product)
             self.update(record_id=record_id, payload=product)
 
     def initialize_new_pid(self, transaction_type: str) -> str:
@@ -162,19 +208,6 @@ class RealEstateProductService(BaseService):
     def get_images_by_id(self, record_id: int) -> List[str]:
         """
         Retrieves image file paths from a directory associated with a product ID.
-
-        This method is designed to locate a specific directory linked to the given
-        `record_id` (e.g., a product or item ID) and then collect all image
-        file paths found within that directory.
-
-        Args:
-            record_id (int): The unique identifier of the product or item for which
-                             images are to be retrieved.
-
-        Returns:
-            List[str]: A list of absolute file paths to the images found in the
-                       corresponding directory. Returns an empty list if no images
-                       are found or if the directory does not exist.
         """
         product = self.read(record_id)
         if not product or not getattr(product, "image_dir", None):
@@ -184,19 +217,6 @@ class RealEstateProductService(BaseService):
     def get_images_by_path(self, path: str) -> List[str]:
         """
         Retrieves image file paths from a specified directory.
-
-        This method scans the directory provided by `path` and collects all
-        image file paths found directly within it. It does not recurse into
-        subdirectories.
-
-        Args:
-            path (str): The absolute or relative path to the directory from which
-                        to retrieve image files.
-
-        Returns:
-            List[str]: A list of absolute file paths to the images found in the
-                       specified directory. Returns an empty list if no images
-                       are found or if the directory does not exist.
         """
         if not path or not os.path.isdir(path):
             return []
@@ -266,6 +286,199 @@ class RealEstateProductService(BaseService):
             record_id = query.value(0)
             return self.read(record_id)
         return None
+
+
+# ------------------------------------------------------------------------------------------------------------------
+class RealEstateTemplateService(BaseService):
+    DATA_TYPE = RealEstateTemplateType
+
+    def __init__(self, model: RealEstateTemplateModel):
+        if not isinstance(model, RealEstateTemplateModel):
+            raise TypeError(
+                "model must be an instance of RealEstateTemplateModel or its subclass."
+            )
+        super().__init__(model)
+
+    def create(self, payload: RealEstateTemplateType) -> bool:
+        return super().create(payload)
+
+    def read(self, record_id: int) -> Optional[RealEstateTemplateType]:
+        return super().read(record_id)
+
+    def read_all(self) -> List[RealEstateTemplateType]:
+        return super().read_all()
+
+    def update(self, record_id: int, payload: RealEstateTemplateType) -> bool:
+        return super().update(record_id, payload)
+
+    def delete(self, record_id: int) -> bool:
+        return super().delete(record_id)
+
+    def delete_multiple(self, record_ids: List[int]):
+        return super().delete_multiple(record_ids)
+
+    def import_data(self, payload: List[RealEstateTemplateType]):
+        return super().import_data(payload)
+
+    def get_random(self, part: str, transaction_type: str, category: str) -> str:
+        """
+        Retrieves a random template value based on part, transaction_type, and category.
+        """
+        if not self._db.isOpen():
+            print(f"[{self.__class__.__name__}.get_random] Database is not open.")
+            return ""
+
+        query_obj = QSqlQuery(self._db)
+        query = f"""
+            SELECT value FROM {TABLE_REAL_ESTATE_TEMPLATE}
+            WHERE (? = '' OR part = ?)
+            AND (? = '' OR transaction_type = ?)
+            AND (? = '' OR category = ?)
+            AND is_default = 0
+            ORDER BY RANDOM() LIMIT 1
+        """
+        query_obj.prepare(query)
+
+        # Binding các tham số
+        query_obj.addBindValue(part)
+        query_obj.addBindValue(part)
+        query_obj.addBindValue(transaction_type)
+        query_obj.addBindValue(transaction_type)
+        query_obj.addBindValue(category)
+        query_obj.addBindValue(category)
+
+        if not query_obj.exec():
+            print(
+                f"[{self.__class__.__name__}.get_random] Query failed: {query_obj.lastError().text()}"
+            )
+            return ""
+
+        if query_obj.next():
+            return query_obj.value(0)
+        return ""
+
+    def get_default(self, part: str, transaction_type: str, category: str) -> str:
+        """
+        Retrieves the default template value (is_default = 1) for a given
+        part, transaction_type, and category.
+        """
+        if not self._db.isOpen():
+            print(f"[{self.__class__.__name__}.get_default] Database is not open.")
+            return ""
+
+        query_obj = QSqlQuery(self._db)
+        query = f"""
+            SELECT value from {TABLE_REAL_ESTATE_TEMPLATE}
+            WHERE (? = '' OR part = ?)
+            AND (? = '' OR transaction_type = ?)
+            AND (? = '' OR category = ?)
+            AND is_default = 1
+        """
+        query_obj.prepare(query)
+
+        # Binding các tham số
+        query_obj.addBindValue(part)
+        query_obj.addBindValue(part)
+        query_obj.addBindValue(transaction_type)
+        query_obj.addBindValue(transaction_type)
+        query_obj.addBindValue(category)
+        query_obj.addBindValue(category)
+
+        if not query_obj.exec():
+            print(
+                f"[{self.__class__.__name__}.get_default] Query failed: {query_obj.lastError().text()}"
+            )
+            return ""
+
+        if query_obj.next():
+            return query_obj.value(0)
+        return ""
+
+    def set_default_template(self, record_id: int) -> bool:
+        """
+        Sets a specific RealEstateTemplate record as the default template and
+        unsets others matching its part, transaction_type, and category.
+        """
+        if not self._db.isOpen():
+            print(
+                f"[{self.__class__.__name__}.set_default_template] Database is not open."
+            )
+            return False
+
+        try:
+            with transaction(self._db) as db_conn:
+                query = QSqlQuery(db_conn)
+
+                # 1. Get information (part, transaction_type, category) of the target record
+                select_target_query = f"""
+                    SELECT part, transaction_type, category
+                    FROM {TABLE_REAL_ESTATE_TEMPLATE}
+                    WHERE id = ?
+                """
+                query.prepare(select_target_query)
+                query.addBindValue(record_id)
+
+                if not query.exec():
+                    print(
+                        f"[{self.__class__.__name__}.set_default_template] Failed to fetch target record: {query.lastError().text()}"
+                    )
+                    raise RuntimeError("Failed to fetch target record.")
+
+                if not query.next():
+                    print(
+                        f"[{self.__class__.__name__}.set_default_template] Record with ID {record_id} not found."
+                    )
+                    return False
+
+                part = query.value("part")
+                transaction_type = query.value("transaction_type")
+                category = query.value("category")
+
+                # 2. Unset (is_default = 0) all other records with matching part, transaction_type, category
+                update_others_query = f"""
+                    UPDATE {TABLE_REAL_ESTATE_TEMPLATE}
+                    SET is_default = 0, updated_at = strftime('%Y-%m-%d %H:%M:%S', 'now')
+                    WHERE part = ?
+                    AND transaction_type = ?
+                    AND category = ?
+                    AND id != ?
+                """
+                query.prepare(update_others_query)
+                query.addBindValue(part)
+                query.addBindValue(transaction_type)
+                query.addBindValue(category)
+                query.addBindValue(record_id)
+
+                if not query.exec():
+                    print(
+                        f"[{self.__class__.__name__}.set_default_template] Failed to unset other defaults: {query.lastError().text()}"
+                    )
+                    raise RuntimeError("Failed to unset other defaults.")
+
+                # 3. Set the target record (record_id) to is_default = 1
+                update_target_query = f"""
+                    UPDATE {TABLE_REAL_ESTATE_TEMPLATE}
+                    SET is_default = 1, updated_at = strftime('%Y-%m-%d %H:%M:%S', 'now')
+                    WHERE id = ?
+                """
+                query.prepare(update_target_query)
+                query.addBindValue(record_id)
+
+                if not query.exec():
+                    print(
+                        f"[{self.__class__.__name__}.set_default_template] Failed to set target as default: {query.lastError().text()}"
+                    )
+                    raise RuntimeError("Failed to set target as default.")
+
+                self.model.select()
+            return True
+
+        except Exception as e:
+            print(
+                f"[{self.__class__.__name__}.set_default_template] Operation failed: {e}"
+            )
+            self.model.select()
+            return False
 
 
 class RealEstateTemplateService(BaseService):

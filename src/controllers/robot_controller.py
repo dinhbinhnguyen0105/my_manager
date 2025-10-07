@@ -185,6 +185,36 @@ class RobotController(BaseController):
                     last_uid_contributed = current_uid
         return browser_tasks
 
+    def init_browser_tasks_sequential(
+        self, browser_actions: Dict[str, BrowserTaskType]
+    ) -> List[BrowserTaskType]:
+        browser_tasks: List[BrowserTaskType] = []
+
+        # Lấy và sắp xếp tất cả các UID
+        sorted_uid_s = sorted(browser_actions.keys())
+
+        # Bỏ qua các biến không cần thiết (max_len, uid_num, last_uid_contributed)
+
+        # Vòng lặp chính: Lặp qua từng UID theo thứ tự đã sắp xếp
+        for uid in sorted_uid_s:
+            # Lấy list các tác vụ của UID hiện tại
+            tasks_for_current_uid = browser_actions[uid]
+
+            # Lặp qua tất cả các tác vụ trong list của UID này
+            for task_obj in tasks_for_current_uid:
+                # Kiểm tra và điều chỉnh thuộc tính tác vụ (giữ lại logic từ code cũ)
+                if task_obj.action_name == "share_latest_product":
+                    task_obj.is_mobile = True
+
+                # Thêm tác vụ vào danh sách cuối cùng
+                browser_tasks.append(task_obj)
+
+                # Lưu ý: Các logic kiểm tra "gap" không còn cần thiết
+                # vì các tác vụ đang được thêm vào tuần tự.
+        print(browser_tasks)
+        exit()
+        return browser_tasks
+
     def handle_run_bot(
         self,
         browser_tasks: List[BrowserTaskType],

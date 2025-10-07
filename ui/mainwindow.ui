@@ -145,7 +145,7 @@
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="sidebar_robot_settings">
+            <widget class="QPushButton" name="sidebar_settings_btn">
              <property name="minimumSize">
               <size>
                <width>0</width>

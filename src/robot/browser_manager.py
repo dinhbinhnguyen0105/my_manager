@@ -68,7 +68,7 @@ class BrowserManager(QObject):
     def _initialize_window_positions(self):
         """
         Calculates 16 window positions in a grid, wrapping to the next row
-        with a 200px offset when the screen edge is reached.
+        with a 200px vertical offset for each new row.
         """
         screen_width = self._screen_size[0]
         screen_height = self._screen_size[1]
@@ -76,11 +76,14 @@ class BrowserManager(QObject):
         # Fixed number of positions to generate
         total_positions = 16
 
-        # Offset for next row/col
-        offset = 200
+        # Offset for next column
+        offset_x = 320
+
+        # Vertical offset for the next row, as requested
+        offset_y = 200
 
         # Store the final list of valid positions
-        # self._available_window_positions = []
+        self._available_window_positions = deque()
 
         # Keep track of the current position to calculate the next
         pos_x = 0
@@ -90,14 +93,14 @@ class BrowserManager(QObject):
             # Add the current position to the list
             self._available_window_positions.append((pos_x, pos_y))
 
-            # Calculate the next potential position
-            next_pos_x = pos_x + offset
+            # Calculate the next potential position horizontally
+            next_pos_x = pos_x + offset_x
 
             # Check if the next position exceeds the screen width
             if next_pos_x + self._window_desktop_width > screen_width:
                 # If it does, wrap to the next row
                 pos_x = 0
-                pos_y += offset
+                pos_y += offset_y  # Use the new vertical offset
 
                 # Check if the new row position is off-screen. If so, stop.
                 if pos_y + self._window_desktop_height > screen_height:
